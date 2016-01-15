@@ -25,8 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>globalvar g;
+            <string>///Initiation
 g=0.5
+death=false
+//Movement
 left=false
 right=false
 jump=false
@@ -129,11 +131,11 @@ if((place_free(x,y+1))&amp;&amp;moving=false)
 {
     if(hspeed&gt;0)
     {
-    hspeed-=movespeed/30
+    hspeed-=movespeed/10
     }
     if(hspeed&lt;0)
     {
-    hspeed+=movespeed/30
+    hspeed+=movespeed/10
     }
 }
 
@@ -271,28 +273,20 @@ room_goto_next()
           <argument>
             <kind>1</kind>
             <string>///Death and respawn
+if(death=true)
+{
+death=false
+x=obj_roomstart.x
+y=obj_roomstart.y
+vspeed=0
+hspeed=0
+}
 
+if(x&lt;-64||y&lt;-64)
+{
+death=true
+}
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string></string>
           </argument>
         </arguments>
       </action>

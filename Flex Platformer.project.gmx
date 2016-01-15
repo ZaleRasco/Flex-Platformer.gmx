@@ -21,13 +21,13 @@
     <object>objects\obj_player</object>
     <object>objects\obj_wall</object>
     <object>objects\obj_control</object>
-    <object>objects\obj_</object>
     <object>objects\obj_roomstart</object>
     <object>objects\obj_roomend</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_one</room>
     <room>rooms\room_two</room>
+    <room>rooms\room_three</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
