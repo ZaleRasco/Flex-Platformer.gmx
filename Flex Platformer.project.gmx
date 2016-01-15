@@ -28,6 +28,7 @@
   <rooms name="rooms">
     <room>rooms\room_one</room>
     <room>rooms\room_two</room>
+    <room>rooms\room_three</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
