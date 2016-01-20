@@ -10,10 +10,11 @@
     <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_control</sprite>
     <sprite>sprites\spr_spikes</sprite>
-    <sprite>sprites\spr_attractor</sprite>
+    <sprite>sprites\spr_bubblecreate</sprite>
     <sprite>sprites\spr_bouncer</sprite>
     <sprite>sprites\spr_start</sprite>
     <sprite>sprites\spr_end</sprite>
+    <sprite>sprites\spr_bubble</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -23,6 +24,8 @@
     <object>objects\obj_control</object>
     <object>objects\obj_roomstart</object>
     <object>objects\obj_roomend</object>
+    <object>objects\obj_bubble</object>
+    <object>objects\obj_bubblecreate</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_one</room>

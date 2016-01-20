@@ -29,14 +29,24 @@
 g=0.5
 death=false
 //Movement
+moving=false
+exiting=false
+stuck=false
+
 left=false
 right=false
 jump=false
+down=false
+up=false
+
 movespeed=4
 airspeed=2
 maxspeed=8
 jumpheight=10
 jumpbuffer=0
+bubblespeed=0.5
+walkspeed=5
+exitjump=false
 </string>
           </argument>
         </arguments>
@@ -78,154 +88,186 @@ if!(keyboard_check(ord('D'))||keyboard_check(vk_right))
     {
     right=false
     }
-
-if(!keyboard_check(ord('A')))&amp;&amp;(!keyboard_check(vk_left))&amp;&amp;(!keyboard_check(ord('D')))&amp;&amp;(!keyboard_check(vk_right))
-{
-moving=false
-}
+if(keyboard_check(ord('S'))||keyboard_check(vk_down))
+    {
+    down=true
+    }
+if!(keyboard_check(ord('S'))||keyboard_check(vk_down))
+    {
+    down=false
+    }
+if(right=false&amp;&amp;left=false)
+    {
+    moving=false
+    }
 else
-{
-movement=true
-}
-
-//Movement
-
-if(left)
-{
-
-    if(hspeed&gt;-maxspeed)
     {
-        if(place_free(x,y+1))
-            {
-            hspeed-=airspeed
-            }
-        else
-            {
-            hspeed-=movespeed
-            }
+    moving=true
     }
-}
-
-if(right)
-{
-   if(hspeed&lt;maxspeed)
-    {
-        if(place_free(x,y+1))
-            {
-            hspeed+=airspeed
-            }
-        else
-            {
-            hspeed+=movespeed
-            }
-    }
-}   
-
-if((!place_free(x,y+1))&amp;&amp;left=false&amp;&amp;right=false)
-{
-    hspeed=0
-}
-
-
-if((place_free(x,y+1))&amp;&amp;moving=false)
-{
-    if(hspeed&gt;0)
-    {
-    hspeed-=movespeed/10
-    }
-    if(hspeed&lt;0)
-    {
-    hspeed+=movespeed/10
-    }
-}
-
-if(left=true&amp;&amp;right=true)
-{
-    hspeed=0
-}
-//Gravity and Falling
-if(place_free(x,y+1)&amp;&amp;vspeed&lt;16)
-    {
-    vspeed+=g
-    }
-
-if(!place_free(x,y+vspeed)&amp;&amp;vspeed&lt;0)
-    {
-    vspeed=0
-    move_contact_solid(90,vspeed)
-    }
-    
-if(!place_free(x,y+vspeed)&amp;&amp;vspeed&gt;0)
-    {
-    vspeed=0
-    move_contact_solid(270,vspeed)
-    }
-    
-if(!place_free(x+hspeed,y)&amp;&amp;hspeed&gt;0)
-    {
-    hspeed=0
-    move_contact_solid(0,hspeed)
-    }
-
-if(!place_free(x+hspeed,y)&amp;&amp;hspeed&lt;0)
-    {
-    hspeed=0
-    move_contact_solid(180,hspeed)
-    }
-
-    
-    
-if(!place_free(x+hspeed,y+vspeed))
-    {
-    dir=point_direction(x,y,x+hspeed,y+vspeed)
-    move_contact_solid(dir,speed)
-    if(abs(hspeed)&gt;abs(vspeed))
-    {
-    vspeed=0
-    }
-    else
-    {
-    hspeed=0
-    }
-}
-
-//Jumping
-if((keyboard_check_pressed(vk_space)||keyboard_check_pressed(vk_up))&amp;&amp;(!place_free(x,y+1))&amp;&amp;(place_free(x,y-1)))
+if((keyboard_check_pressed(vk_space))&amp;&amp;!place_free(x,y+1)&amp;&amp;place_free(x,y-1))
     {
     jump=true
-    vspeed=-jumpheight
     }
-else if (keyboard_check_pressed(vk_space)||keyboard_check_pressed(vk_up)&amp;&amp;(place_free(x,y+1)))
+else
     {
-    jumpbuffer=6
-    }
-if (jumpbuffer&gt;0)
-    {
-        if((!place_free(x,y+1))&amp;&amp;(place_free(x,y-1)))
-            {
-            jump=true
-            vspeed=-jumpheight
-            if((!keyboard_check(ord('A')))&amp;&amp;(!keyboard_check(vk_left))&amp;&amp;(!keyboard_check(ord('D')))&amp;&amp;(!keyboard_check(vk_right)))
-                {
-                hspeed=0
-                }
-            jumpbuffer=0
-            }
-        else
-            {
-            jumpbuffer-=1
-            }
-    }
-
-if((keyboard_check_released(vk_space)||keyboard_check_released(vk_up))&amp;&amp;(place_free(x,y+1))&amp;&amp;jump==true)
-    {
-    if (vspeed&lt;0)
-        {
-        vspeed=0
-        }
     jump=false
     }
 
+//Movement
+if(stuck=false)
+{
+    if(left)
+    {
+    
+        if(hspeed&gt;-maxspeed)
+        {
+            if(!(maxspeed&gt;(hspeed-movespeed)))
+            {
+            
+                if(place_free(x,y+1))
+                    {
+                    hspeed-=airspeed
+                    }
+                else
+                    {
+                    hspeed-=movespeed
+                    }
+            }
+            else
+            {
+            hspeed=-maxspeed
+            }
+        }
+    }
+    
+    if(right)
+    {
+       if(hspeed&lt;maxspeed)
+        {
+            if(!(maxspeed&lt;(hspeed+movespeed)))
+            {
+                if(place_free(x,y+1))
+                    {
+                    hspeed+=airspeed
+                    }
+                else
+                    {
+                    hspeed+=movespeed
+                    }
+            }
+            else
+            {
+            hspeed=maxspeed
+            }
+        }
+    }   
+    
+    if((!place_free(x,y+1))&amp;&amp;left=false&amp;&amp;right=false)
+    {
+        hspeed=0
+    }
+    
+    
+    if((place_free(x,y+1))&amp;&amp;moving=false)
+    {
+        if(hspeed&gt;0)
+        {
+        hspeed-=movespeed/10
+        }
+        if(hspeed&lt;0)
+        {
+        hspeed+=movespeed/10
+        }
+    }
+    
+    if(left=true&amp;&amp;right=true)
+    {
+        hspeed=0
+    }
+    //Gravity and Falling
+    if(place_free(x,y+1)&amp;&amp;vspeed&lt;16)
+        {
+        vspeed+=g
+        }
+    
+    if(!place_free(x,y+vspeed)&amp;&amp;vspeed&lt;0)
+        {
+        vspeed=0
+        move_contact_solid(90,vspeed)
+        }
+        
+    if(!place_free(x,y+vspeed)&amp;&amp;vspeed&gt;0)
+        {
+        vspeed=0
+        move_contact_solid(270,vspeed)
+        }
+        
+    if(!place_free(x+hspeed,y)&amp;&amp;hspeed&gt;0)
+        {
+        hspeed=0
+        move_contact_solid(0,hspeed)
+        }
+    
+    if(!place_free(x+hspeed,y)&amp;&amp;hspeed&lt;0)
+        {
+        hspeed=0
+        move_contact_solid(180,hspeed)
+        }
+    
+        
+        
+    if(!place_free(x+hspeed,y+vspeed))
+        {
+        dir=point_direction(x,y,x+hspeed,y+vspeed)
+        move_contact_solid(dir,speed)
+        if(abs(hspeed)&gt;abs(vspeed))
+        {
+        vspeed=0
+        }
+        else
+        {
+        hspeed=0
+        }
+    }
+    
+    //Jumping
+    if(jump=true||exitjump=true)
+        {
+        jumping=true
+        vspeed=-jumpheight
+        exitjump=false
+        }
+    else if (keyboard_check_pressed(vk_space)||keyboard_check_pressed(vk_up)&amp;&amp;(place_free(x,y+1)))
+        {
+        jumpbuffer=6
+        }
+    if (jumpbuffer&gt;0)
+        {
+            if((!place_free(x,y+1))&amp;&amp;(place_free(x,y-1)))
+                {
+                jumping=true
+                vspeed=-jumpheight
+                if((!keyboard_check(ord('A')))&amp;&amp;(!keyboard_check(vk_left))&amp;&amp;(!keyboard_check(ord('D')))&amp;&amp;(!keyboard_check(vk_right)))
+                    {
+                    hspeed=0
+                    }
+                jumpbuffer=0
+                }
+            else
+                {
+                jumpbuffer-=1
+                }
+        }
+    
+    if((keyboard_check_released(vk_space))&amp;&amp;(place_free(x,y+1))&amp;&amp;jumping==true)
+        {
+        if (vspeed&lt;0)
+            {
+            vspeed=0
+            }
+        jump=false
+        }
+} 
 </string>
           </argument>
         </arguments>
@@ -276,6 +318,7 @@ room_goto_next()
 if(death=true)
 {
 death=false
+stuck=false
 x=obj_roomstart.x
 y=obj_roomstart.y
 vspeed=0
@@ -286,6 +329,134 @@ if(x&lt;-64||y&lt;-64)
 {
 death=true
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Bubbles
+bubbleid=instance_nearest(x,y,obj_bubble)
+
+if(instance_number(obj_bubble)&gt;0)
+    {
+    if(stuck=false)
+        {
+        if(place_meeting(x,y,obj_bubble)&amp;&amp;exiting=false)
+            {
+                x=bubbleid.x
+                y=bubbleid.y
+                if(obj_player.vspeed&gt;0)
+                    {
+                    bubbleid.vspeed=min(obj_player.vspeed,4)
+                    vspeed=min(obj_player.vspeed,4)
+                    }
+                if(obj_player.hspeed&gt;0)
+                    {
+                    bubbleid.hspeed=min(obj_player.vspeed,4)
+                    hspeed=min(obj_player.vspeed,4)
+                    }
+                if(obj_player.hspeed&lt;0)
+                    {
+                    bubbleid.hspeed=max(obj_player.hspeed,-4)
+                    hspeed=max(obj_player.hspeed,-4)
+                    }
+                stuck=true
+            }
+        else if(!place_meeting(x,y,obj_bubble)&amp;&amp;exiting=true)
+            {
+            exiting=false
+            }
+        }
+    if(stuck=true)
+        {
+        if(down=true)
+            {
+            exiting=true
+            stuck=false
+            }
+        if(keyboard_check_pressed(vk_space))
+            {
+            bubbleid.vspeed+=6
+            if(left)
+                {
+                bubbleid.hspeed-=hspeed*2
+                }
+            if(right)
+                {
+                bubbleid.hspeed-=hspeed*2
+                }
+            exiting=true
+            stuck=false
+            exitjump=true
+            }
+        if(hspeed&gt;0&amp;&amp;obj_player.moving=false)
+            {
+            hspeed-=0.1
+            }
+    
+        if(hspeed&lt;0&amp;&amp;obj_player.moving=false)
+            {
+            hspeed+=0.1
+            }
+            
+        vspeed=bubbleid.vspeed
+            if(left)
+                {
+                if(hspeed&gt;-walkspeed)
+                    {
+                    hspeed-=bubblespeed
+                    bubbleid.hspeed-=bubblespeed
+                    }
+                }
+            if(right)
+                {
+                if(hspeed&lt;walkspeed)
+                    {
+                    hspeed+=bubblespeed
+                    bubbleid.hspeed+=bubblespeed
+                    }
+                }
+        }        
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_self()
+draw_text(100,100,obj_player.hspeed)
 </string>
           </argument>
         </arguments>
