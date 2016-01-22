@@ -17,7 +17,12 @@
     <sprite>sprites\spr_bubble</sprite>
     <sprite>sprites\spr_bubblepop</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <backgrounds name="Beach">
+      <background>background\tileset_beach</background>
+      <background>background\background_beach</background>
+    </backgrounds>
+  </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\obj_player</object>
