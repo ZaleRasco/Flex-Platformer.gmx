@@ -16,6 +16,7 @@
     <sprite>sprites\spr_end</sprite>
     <sprite>sprites\spr_bubble</sprite>
     <sprite>sprites\spr_bubblepop</sprite>
+    <sprite>sprites\spr_bouncy</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -28,11 +29,13 @@
     <object>objects\obj_bubble</object>
     <object>objects\obj_bubblecreate</object>
     <object>objects\obj_spikes</object>
+    <object>objects\obj_bouncy</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_one</room>
     <room>rooms\room_two</room>
     <room>rooms\room_three</room>
+    <room>rooms\room_entrance</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
