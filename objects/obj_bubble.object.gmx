@@ -52,11 +52,11 @@
             <kind>1</kind>
             <string>if(!place_free(x,y))
 {
-    if(obj_player.stuck=true)
-            {
-            obj_player.stuck=false
-            }
-    instance_destroy()
+if(obj_player.stuck=true)
+        {
+        obj_player.stuck=false
+        }
+instance_destroy()
 }
 if(vspeed&gt;-2)
 {

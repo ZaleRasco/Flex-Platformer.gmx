@@ -51,7 +51,7 @@
             <string>bubblecreate+=1
 if(bubblecreate&gt;=120)
 {
-instance_create(x,y,obj_bubble)
+instance_create(x,y-32,obj_bubble)
 bubblecreate=0
 }
 </string>

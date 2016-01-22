@@ -3,7 +3,7 @@
   <spriteName>spr_player</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>1</depth>
+  <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -39,7 +39,7 @@ right=false
 jump=false
 down=false
 up=false
-
+bubbleid=noone
 movespeed=4
 airspeed=2
 maxspeed=8
@@ -356,15 +356,19 @@ if place_meeting(x,y,obj_spikes)
           <argument>
             <kind>1</kind>
             <string>///Bubbles
+oldbubbleid=bubbleid
+bubbleid=instance_nearest(x,y,obj_bubble)
 
 if(instance_number(obj_bubble)&gt;0)
     {
     if(stuck=false)
         {
+        if (!(oldbubbleid==bubbleid))
+        {
+            exiting=false
+        }
         if(place_meeting(x,y,obj_bubble)&amp;&amp;exiting=false)
             {
-                bubbleid=instance_position(x,y,obj_bubble)
-                depth=-1
                 x=bubbleid.x
                 y=bubbleid.y
                 if(obj_player.vspeed&gt;0)
@@ -391,7 +395,6 @@ if(instance_number(obj_bubble)&gt;0)
         }
     if(stuck=true)
         {
-        depth=1
         if(down=true)
             {
             exiting=true
