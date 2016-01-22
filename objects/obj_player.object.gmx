@@ -331,7 +331,7 @@ if(x&lt;-64||y&lt;-64)
 death=true
 }
 
-if place_meeting(x,y,obj_spikes)
+if place_meeting(x,y,obj_spikesup)
 {
     death=true
 }
@@ -464,7 +464,7 @@ if(instance_number(obj_bubble)&gt;0)
 if(place_meeting(x,y,obj_bouncy)&amp;&amp;place_free(x,y-1))
 {
 jumping=false
-vspeed=-12
+vspeed=-14
 }
 </string>
           </argument>
