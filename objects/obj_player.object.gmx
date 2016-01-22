@@ -331,7 +331,7 @@ if(x&lt;-64||y&lt;-64)
 death=true
 }
 
-if place_meeting(x,y,obj_spikesup)
+if place_meeting(x,y,obj_death)
 {
     death=true
 }

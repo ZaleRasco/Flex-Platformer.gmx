@@ -11,7 +11,7 @@
       <sprite>sprites\spr_spikesright</sprite>
       <sprite>sprites\spr_spikes</sprite>
       <sprite>sprites\spr_spikesdown</sprite>
-      <sprite>sprites\spr_spikesleft</sprite>
+      <sprite>sprites\spr_death</sprite>
     </sprites>
     <sprites name="Terrain">
       <sprite>sprites\spr_bouncy</sprite>
@@ -38,10 +38,7 @@
   <objects name="objects">
     <object>objects\obj_player</object>
     <objects name="Obstacles">
-      <object>objects\obj_spikesleft</object>
-      <object>objects\obj_spikesright</object>
-      <object>objects\obj_spikesup</object>
-      <object>objects\obj_spikesdown</object>
+      <object>objects\obj_death</object>
     </objects>
     <objects name="Terrain">
       <object>objects\obj_bouncy</object>
