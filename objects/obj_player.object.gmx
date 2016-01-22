@@ -39,7 +39,7 @@ right=false
 jump=false
 down=false
 up=false
-
+bubbleid=noone
 movespeed=4
 airspeed=2
 maxspeed=8
@@ -356,12 +356,17 @@ if place_meeting(x,y,obj_spikesup)
           <argument>
             <kind>1</kind>
             <string>///Bubbles
+oldbubbleid=bubbleid
 bubbleid=instance_nearest(x,y,obj_bubble)
 
 if(instance_number(obj_bubble)&gt;0)
     {
     if(stuck=false)
         {
+        if (!(oldbubbleid==bubbleid))
+        {
+            exiting=false
+        }
         if(place_meeting(x,y,obj_bubble)&amp;&amp;exiting=false)
             {
                 x=bubbleid.x
