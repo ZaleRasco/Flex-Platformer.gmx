@@ -329,6 +329,11 @@ if(x&lt;-64||y&lt;-64)
 {
 death=true
 }
+
+if place_meeting(x,y,obj_spikes)
+{
+    death=true
+}
 </string>
           </argument>
         </arguments>
