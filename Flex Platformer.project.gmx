@@ -6,16 +6,27 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_player</sprite>
-    <sprite>sprites\spr_control</sprite>
-    <sprite>sprites\spr_spikes</sprite>
-    <sprite>sprites\spr_bubblecreate</sprite>
-    <sprite>sprites\spr_bouncer</sprite>
-    <sprite>sprites\spr_start</sprite>
-    <sprite>sprites\spr_end</sprite>
-    <sprite>sprites\spr_bubble</sprite>
-    <sprite>sprites\spr_bubblepop</sprite>
+    <sprites name="Obstacles">
+      <sprite>sprites\spr_spikesright</sprite>
+      <sprite>sprites\spr_spikes</sprite>
+      <sprite>sprites\spr_spikesdown</sprite>
+      <sprite>sprites\spr_spikesleft</sprite>
+    </sprites>
+    <sprites name="Terrain">
+      <sprite>sprites\spr_bouncy</sprite>
+      <sprite>sprites\spr_wall</sprite>
+    </sprites>
+    <sprites name="Control">
+      <sprite>sprites\spr_control</sprite>
+      <sprite>sprites\spr_start</sprite>
+      <sprite>sprites\spr_end</sprite>
+    </sprites>
+    <sprites name="Special">
+      <sprite>sprites\spr_bubblecreate</sprite>
+      <sprite>sprites\spr_bubblepop</sprite>
+      <sprite>sprites\spr_bubble</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Beach">
@@ -26,18 +37,33 @@
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\obj_player</object>
-    <object>objects\obj_wall</object>
-    <object>objects\obj_control</object>
-    <object>objects\obj_roomstart</object>
-    <object>objects\obj_roomend</object>
-    <object>objects\obj_bubble</object>
-    <object>objects\obj_bubblecreate</object>
-    <object>objects\obj_spikes</object>
+    <objects name="Obstacles">
+      <object>objects\obj_spikesleft</object>
+      <object>objects\obj_spikesright</object>
+      <object>objects\obj_spikesup</object>
+      <object>objects\obj_spikesdown</object>
+    </objects>
+    <objects name="Terrain">
+      <object>objects\obj_bouncy</object>
+      <object>objects\obj_wall</object>
+    </objects>
+    <objects name="Special">
+      <object>objects\obj_bubble</object>
+      <object>objects\obj_bubblecreate</object>
+    </objects>
+    <objects name="Control">
+      <object>objects\obj_control</object>
+      <object>objects\obj_roomstart</object>
+      <object>objects\obj_roomend</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_one</room>
     <room>rooms\room_two</room>
     <room>rooms\room_three</room>
+    <room>rooms\room_four</room>
+    <room>rooms\room_entrance</room>
+    <room>rooms\room5</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
