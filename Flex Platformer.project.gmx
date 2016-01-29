@@ -56,12 +56,12 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room_one</room>
-    <room>rooms\room_two</room>
-    <room>rooms\room_three</room>
-    <room>rooms\room_four</room>
+    <room>rooms\beach_one</room>
+    <room>rooms\beach_two</room>
+    <room>rooms\beach_three</room>
+    <room>rooms\beach_four</room>
+    <room>rooms\beach_five</room>
     <room>rooms\room_entrance</room>
-    <room>rooms\room_five</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

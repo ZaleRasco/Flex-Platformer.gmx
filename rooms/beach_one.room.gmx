@@ -142,6 +142,25 @@
     <tile bgName="" x="-256" y="416" w="16" h="16" xo="0" yo="0" id="10000012" name="inst_ED2F0734" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="" x="-256" y="480" w="16" h="16" xo="0" yo="0" id="10000013" name="inst_106247E8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tileset_beach" x="416" y="736" w="32" h="32" xo="0" yo="0" id="10000086" name="inst_7397FF28" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background_spikes" x="416" y="720" w="16" h="16" xo="0" yo="0" id="10000283" name="inst_BE2FB80A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background_spikes" x="416" y="720" w="16" h="16" xo="0" yo="0" id="10000285" name="inst_CD0BB8B2" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background_spikes" x="432" y="720" w="16" h="16" xo="0" yo="0" id="10000286" name="inst_7EB9525D" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background_spikes" x="448" y="720" w="16" h="16" xo="0" yo="0" id="10000287" name="inst_34C6D42B" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background_spikes" x="464" y="720" w="16" h="16" xo="0" yo="0" id="10000288" name="inst_D4C4B717" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background_spikes" x="480" y="720" w="16" h="16" xo="0" yo="0" id="10000289" name="inst_41F61476" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background_spikes" x="496" y="720" w="16" h="16" xo="0" yo="0" id="10000290" name="inst_74220ACD" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background_spikes" x="512" y="720" w="16" h="16" xo="0" yo="0" id="10000291" name="inst_94C96029" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background_spikes" x="528" y="720" w="16" h="16" xo="0" yo="0" id="10000292" name="inst_2B632E0E" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background_spikes" x="544" y="720" w="16" h="16" xo="0" yo="0" id="10000293" name="inst_FFC5BA0F" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background_spikes" x="560" y="720" w="16" h="16" xo="0" yo="0" id="10000294" name="inst_0C0FAC60" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background_spikes" x="576" y="720" w="16" h="16" xo="0" yo="0" id="10000295" name="inst_769C07E2" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background_spikes" x="592" y="720" w="16" h="16" xo="0" yo="0" id="10000296" name="inst_40578E62" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background_spikes" x="608" y="720" w="16" h="16" xo="0" yo="0" id="10000297" name="inst_8E146F0D" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background_spikes" x="624" y="720" w="16" h="16" xo="0" yo="0" id="10000298" name="inst_0570DFF2" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background_spikes" x="640" y="720" w="16" h="16" xo="0" yo="0" id="10000299" name="inst_F6FEBBDE" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background_spikes" x="656" y="720" w="16" h="16" xo="0" yo="0" id="10000300" name="inst_05B6A313" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background_spikes" x="672" y="720" w="16" h="16" xo="0" yo="0" id="10000301" name="inst_CED6CBFD" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background_spikes" x="688" y="720" w="16" h="16" xo="0" yo="0" id="10000302" name="inst_3ED2A123" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tileset_beach" x="0" y="672" w="32" h="32" xo="0" yo="0" id="10000014" name="inst_E8D905B5" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tileset_beach" x="32" y="672" w="32" h="32" xo="0" yo="0" id="10000015" name="inst_B8EFEC45" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tileset_beach" x="64" y="672" w="32" h="32" xo="0" yo="0" id="10000016" name="inst_02CF9EA0" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
