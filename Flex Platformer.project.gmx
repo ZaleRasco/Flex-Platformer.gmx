@@ -33,6 +33,7 @@
       <background>background\tileset_beach</background>
       <background>background\background_beach</background>
     </backgrounds>
+    <background>background\background_spikes</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
@@ -60,7 +61,7 @@
     <room>rooms\room_three</room>
     <room>rooms\room_four</room>
     <room>rooms\room_entrance</room>
-    <room>rooms\room5</room>
+    <room>rooms\room_five</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

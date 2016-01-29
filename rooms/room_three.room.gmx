@@ -31,7 +31,7 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="background_beach" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -121,7 +121,100 @@
     <instance objName="obj_wall" x="416" y="480" name="inst_DC8B5123" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="448" y="480" name="inst_ABB3CF7C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
-  <tiles/>
+  <tiles>
+    <tile bgName="tileset_beach" x="0" y="640" w="32" h="32" xo="0" yo="0" id="10000177" name="inst_E25EFCE4" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="32" y="640" w="32" h="32" xo="0" yo="0" id="10000178" name="inst_F0DCEB86" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="64" y="640" w="32" h="32" xo="0" yo="0" id="10000179" name="inst_EEB21AD9" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="96" y="640" w="32" h="32" xo="0" yo="0" id="10000180" name="inst_0E59088C" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="128" y="640" w="32" h="32" xo="0" yo="0" id="10000181" name="inst_FBF3942E" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="160" y="640" w="32" h="32" xo="0" yo="0" id="10000182" name="inst_8347277D" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="192" y="640" w="32" h="32" xo="0" yo="0" id="10000183" name="inst_3634A41A" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="192" y="672" w="32" h="32" xo="0" yo="0" id="10000184" name="inst_BD424C92" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="224" y="672" w="32" h="32" xo="0" yo="0" id="10000185" name="inst_CB5BCB70" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="288" y="672" w="32" h="32" xo="0" yo="0" id="10000187" name="inst_9132BECF" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="288" y="704" w="32" h="32" xo="0" yo="0" id="10000188" name="inst_A642BD78" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="288" y="736" w="32" h="32" xo="0" yo="0" id="10000189" name="inst_DFDB4972" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="320" y="736" w="32" h="32" xo="0" yo="0" id="10000190" name="inst_EBBE0AE1" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="352" y="736" w="32" h="32" xo="0" yo="0" id="10000191" name="inst_7FE12C4A" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="384" y="736" w="32" h="32" xo="0" yo="0" id="10000192" name="inst_18D12300" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="416" y="736" w="32" h="32" xo="0" yo="0" id="10000193" name="inst_893CDE93" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="448" y="736" w="32" h="32" xo="0" yo="0" id="10000195" name="inst_D2988D99" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="480" y="736" w="32" h="32" xo="0" yo="0" id="10000196" name="inst_BEC29050" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="544" y="736" w="32" h="32" xo="0" yo="0" id="10000197" name="inst_17E63402" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="576" y="736" w="32" h="32" xo="0" yo="0" id="10000198" name="inst_263818DA" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="704" y="736" w="32" h="32" xo="0" yo="0" id="10000202" name="inst_BD06C89E" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="672" y="736" w="32" h="32" xo="0" yo="0" id="10000203" name="inst_C60FD45C" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="640" y="736" w="32" h="32" xo="0" yo="0" id="10000204" name="inst_CBB80833" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="608" y="736" w="32" h="32" xo="0" yo="0" id="10000205" name="inst_B13AF8C8" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="512" y="736" w="32" h="32" xo="0" yo="0" id="10000206" name="inst_B739A1AF" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="256" y="672" w="32" h="32" xo="0" yo="0" id="10000208" name="inst_DEF64392" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="256" y="704" w="32" h="32" xo="0" yo="0" id="10000209" name="inst_20CCD899" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="224" y="704" w="32" h="32" xo="0" yo="0" id="10000210" name="inst_04F4B26F" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="192" y="704" w="32" h="32" xo="0" yo="0" id="10000211" name="inst_FB432BDF" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="160" y="704" w="32" h="32" xo="0" yo="0" id="10000212" name="inst_B32A8D8C" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="128" y="704" w="32" h="32" xo="0" yo="0" id="10000213" name="inst_1665FAE7" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="96" y="704" w="32" h="32" xo="0" yo="0" id="10000214" name="inst_1CB310C2" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="64" y="704" w="32" h="32" xo="0" yo="0" id="10000215" name="inst_8B1CC853" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="32" y="704" w="32" h="32" xo="0" yo="0" id="10000216" name="inst_A6A75A6A" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="0" y="704" w="32" h="32" xo="0" yo="0" id="10000217" name="inst_B7F9D21A" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="0" y="672" w="32" h="32" xo="0" yo="0" id="10000218" name="inst_8A31DC54" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="32" y="672" w="32" h="32" xo="0" yo="0" id="10000219" name="inst_214DE432" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="64" y="672" w="32" h="32" xo="0" yo="0" id="10000220" name="inst_90DC5AE2" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="96" y="672" w="32" h="32" xo="0" yo="0" id="10000221" name="inst_6A0468EC" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="128" y="672" w="32" h="32" xo="0" yo="0" id="10000222" name="inst_2BD316E9" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="160" y="672" w="32" h="32" xo="0" yo="0" id="10000223" name="inst_871B3C76" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="256" y="736" w="32" h="32" xo="0" yo="0" id="10000224" name="inst_68DBABA9" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="224" y="736" w="32" h="32" xo="0" yo="0" id="10000225" name="inst_96FC9389" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="192" y="736" w="32" h="32" xo="0" yo="0" id="10000226" name="inst_BD4C9433" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="160" y="736" w="32" h="32" xo="0" yo="0" id="10000227" name="inst_E5BD3556" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="128" y="736" w="32" h="32" xo="0" yo="0" id="10000228" name="inst_9506937A" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="96" y="736" w="32" h="32" xo="0" yo="0" id="10000229" name="inst_929FE651" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="64" y="736" w="32" h="32" xo="0" yo="0" id="10000230" name="inst_E2CF6ED5" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="32" y="736" w="32" h="32" xo="0" yo="0" id="10000231" name="inst_DFEF7669" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="0" y="736" w="32" h="32" xo="0" yo="0" id="10000232" name="inst_B562676D" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="704" y="640" w="32" h="32" xo="0" yo="0" id="10000235" name="inst_59C7A9C4" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="736" y="640" w="32" h="32" xo="0" yo="0" id="10000236" name="inst_7B670783" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="768" y="640" w="32" h="32" xo="0" yo="0" id="10000237" name="inst_49A9ECAF" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="800" y="640" w="32" h="32" xo="0" yo="0" id="10000238" name="inst_8A49AF11" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="832" y="640" w="32" h="32" xo="0" yo="0" id="10000239" name="inst_9B84499B" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="864" y="640" w="32" h="32" xo="0" yo="0" id="10000240" name="inst_5404E31B" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="896" y="640" w="32" h="32" xo="0" yo="0" id="10000241" name="inst_5ECEF7BB" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="928" y="640" w="32" h="32" xo="0" yo="0" id="10000242" name="inst_1DC6988F" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="960" y="640" w="32" h="32" xo="0" yo="0" id="10000243" name="inst_126C0F20" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="992" y="640" w="32" h="32" xo="0" yo="0" id="10000244" name="inst_EA5741A5" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="992" y="672" w="32" h="32" xo="0" yo="0" id="10000245" name="inst_15229AC1" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="992" y="704" w="32" h="32" xo="0" yo="0" id="10000246" name="inst_06537196" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="992" y="736" w="32" h="32" xo="0" yo="0" id="10000247" name="inst_C135DACF" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="960" y="736" w="32" h="32" xo="0" yo="0" id="10000248" name="inst_B193B85B" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="928" y="736" w="32" h="32" xo="0" yo="0" id="10000249" name="inst_3C6C7C1A" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="896" y="736" w="32" h="32" xo="0" yo="0" id="10000250" name="inst_D1E74C47" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="864" y="736" w="32" h="32" xo="0" yo="0" id="10000251" name="inst_D5643B16" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="832" y="736" w="32" h="32" xo="0" yo="0" id="10000252" name="inst_670EC957" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="800" y="736" w="32" h="32" xo="0" yo="0" id="10000253" name="inst_65987EED" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="768" y="736" w="32" h="32" xo="0" yo="0" id="10000254" name="inst_F0E36152" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="736" y="736" w="32" h="32" xo="0" yo="0" id="10000255" name="inst_F01851D3" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="736" y="704" w="32" h="32" xo="0" yo="0" id="10000256" name="inst_98ED2411" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="704" y="704" w="32" h="32" xo="0" yo="0" id="10000257" name="inst_469D13C9" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="704" y="672" w="32" h="32" xo="0" yo="0" id="10000258" name="inst_BA61FFE0" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="736" y="672" w="32" h="32" xo="0" yo="0" id="10000259" name="inst_0B19AD53" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="768" y="672" w="32" h="32" xo="0" yo="0" id="10000260" name="inst_5B58729D" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="864" y="672" w="32" h="32" xo="0" yo="0" id="10000262" name="inst_443F61D9" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="896" y="672" w="32" h="32" xo="0" yo="0" id="10000263" name="inst_D34D12F1" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="960" y="672" w="32" h="32" xo="0" yo="0" id="10000265" name="inst_8FDCCF69" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="928" y="672" w="32" h="32" xo="0" yo="0" id="10000266" name="inst_65EDA423" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="896" y="704" w="32" h="32" xo="0" yo="0" id="10000268" name="inst_E1A3DDAD" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="864" y="704" w="32" h="32" xo="0" yo="0" id="10000269" name="inst_7A1B3703" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="832" y="672" w="32" h="32" xo="0" yo="0" id="10000271" name="inst_811D420B" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="832" y="704" w="32" h="32" xo="0" yo="0" id="10000272" name="inst_809C20C6" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="800" y="672" w="32" h="32" xo="0" yo="0" id="10000274" name="inst_38ED76A2" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="768" y="704" w="32" h="32" xo="0" yo="0" id="10000276" name="inst_7D302F3A" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="800" y="704" w="32" h="32" xo="0" yo="0" id="10000277" name="inst_C885194B" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="928" y="704" w="32" h="32" xo="0" yo="0" id="10000278" name="inst_2A7D329A" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="960" y="704" w="32" h="32" xo="0" yo="0" id="10000279" name="inst_8F22D5DA" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="448" y="480" w="32" h="32" xo="0" yo="0" id="10000280" name="inst_3AFA6858" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="416" y="480" w="32" h="32" xo="0" yo="0" id="10000281" name="inst_928C40EE" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="384" y="480" w="32" h="32" xo="0" yo="0" id="10000282" name="inst_EA4774F5" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+  </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
   <PhysicsWorldLeft>0</PhysicsWorldLeft>
