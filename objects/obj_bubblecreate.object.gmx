@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>bubblecreate=0
+            <string>mybubble=noone
 </string>
           </argument>
         </arguments>
@@ -48,11 +48,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>bubblecreate+=1
-if(bubblecreate&gt;=120)
+            <string>if (mybubble=noone)
 {
-instance_create(x,y-32,obj_bubble)
-bubblecreate=0
+mybubble = instance_create(x,y,obj_bubble)
 }
 </string>
           </argument>

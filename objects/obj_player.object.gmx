@@ -382,8 +382,8 @@ if(instance_number(obj_bubble)&gt;0)
                     }
                 if(obj_player.hspeed&gt;0)
                     {
-                    bubbleid.hspeed=min(obj_player.vspeed,4)
-                    hspeed=min(obj_player.vspeed,4)
+                    bubbleid.hspeed=min(obj_player.hspeed,4)
+                    hspeed=min(obj_player.hspeed,4)
                     }
                 if(obj_player.hspeed&lt;0)
                     {
@@ -391,6 +391,7 @@ if(instance_number(obj_bubble)&gt;0)
                     hspeed=max(obj_player.hspeed,-4)
                     }
                 stuck=true
+                bubbleid.activated=true
             }
         else if(!place_meeting(x,y,obj_bubble)&amp;&amp;exiting=true)
             {
@@ -406,15 +407,10 @@ if(instance_number(obj_bubble)&gt;0)
             }
         if(keyboard_check_pressed(vk_space))
             {
-            bubbleid.vspeed+=6
-            /*if(left)
+            if(bubbleid.vspeed&lt;=0)
                 {
-                bubbleid.hspeed-=hspeed*2
+                bubbleid.vspeed+=6
                 }
-            if(right)
-                {
-                bubbleid.hspeed-=hspeed*2
-                }*/
             bubbleid.hspeed-=obj_player.hspeed*1.5
             exiting=true
             stuck=false

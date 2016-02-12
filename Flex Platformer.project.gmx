@@ -32,6 +32,7 @@
     <backgrounds name="Beach">
       <background>background\tileset_beach</background>
       <background>background\background_beach</background>
+      <background>background\tileset_cave</background>
     </backgrounds>
     <background>background\background_spikes</background>
   </backgrounds>
@@ -56,12 +57,13 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\beach_one</room>
-    <room>rooms\beach_two</room>
-    <room>rooms\beach_three</room>
-    <room>rooms\beach_four</room>
-    <room>rooms\beach_five</room>
+    <room>rooms\beach_1</room>
+    <room>rooms\beach_2</room>
+    <room>rooms\beach_3</room>
+    <room>rooms\beach_4</room>
+    <room>rooms\beach_5</room>
     <room>rooms\room_entrance</room>
+    <room>rooms\cave_1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
