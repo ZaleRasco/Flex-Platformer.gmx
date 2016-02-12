@@ -62,8 +62,6 @@
     <room>rooms\beach_two</room>
     <room>rooms\beach_three</room>
     <room>rooms\beach_four</room>
-    <room>rooms\beach_five</room>
-    <room>rooms\room_entrance</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
