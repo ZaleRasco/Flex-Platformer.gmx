@@ -56,7 +56,6 @@
     <instance objName="obj_wall" x="64" y="640" name="inst_3972E8A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="96" y="640" name="inst_484B5144" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="128" y="640" name="inst_457EEBA6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_control" x="0" y="0" name="inst_0A1F81E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_roomstart" x="64" y="608" name="inst_51224ED2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="160" y="640" name="inst_32CFB8D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="192" y="640" name="inst_BA77D981" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -117,6 +116,7 @@
     <tile bgName="tileset_beach" x="64" y="640" w="32" h="32" xo="0" yo="0" id="10000096" name="inst_1BA25757" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tileset_beach" x="0" y="640" w="32" h="32" xo="0" yo="0" id="10000097" name="inst_675D6566" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tileset_beach" x="32" y="640" w="32" h="32" xo="0" yo="0" id="10000098" name="inst_76910C34" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="" x="0" y="0" w="16" h="16" xo="0" yo="0" id="10000487" name="inst_6DDB5E26" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tileset_beach" x="32" y="672" w="32" h="32" xo="0" yo="0" id="10000099" name="inst_5C3AE4B6" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tileset_beach" x="96" y="640" w="32" h="32" xo="0" yo="0" id="10000104" name="inst_BC8D983F" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tileset_beach" x="128" y="640" w="32" h="32" xo="0" yo="0" id="10000105" name="inst_28FD103F" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

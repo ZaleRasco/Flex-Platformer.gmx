@@ -107,7 +107,6 @@
     <instance objName="obj_death" x="560" y="544" name="inst_C9B1E7B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_death" x="576" y="544" name="inst_D66DB546" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_death" x="592" y="544" name="inst_C9BCBD3B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_control" x="0" y="0" name="inst_ACA35D8F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_roomstart" x="32" y="608" name="inst_71193044" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_roomend" x="1024" y="608" name="inst_B17A0F5B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_roomend" x="1024" y="576" name="inst_FEB44D73" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -279,6 +278,7 @@
     <tile bgName="tileset_beach" x="928" y="736" w="32" h="32" xo="0" yo="0" id="10000484" name="inst_B9791774" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tileset_beach" x="960" y="736" w="32" h="32" xo="0" yo="0" id="10000485" name="inst_A9D118E2" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tileset_beach" x="992" y="736" w="32" h="32" xo="0" yo="0" id="10000486" name="inst_98C8AE83" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="" x="0" y="0" w="16" h="16" xo="0" yo="0" id="10000489" name="inst_D9C3E785" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
