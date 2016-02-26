@@ -468,8 +468,8 @@ if(instance_number(obj_bubble)&gt;0)
             <string>///Bouncy
 if(place_meeting(x,y,obj_bouncy)&amp;&amp;place_free(x,y-1))
 {
-jumping=false
-vspeed=-14
+    jumping=false
+    vspeed=-14
 }
 </string>
           </argument>

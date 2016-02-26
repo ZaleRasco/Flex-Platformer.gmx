@@ -49,7 +49,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!place_free(x,y))
+            <string>if(y&lt;=-48)
+{
+    instance_destroy()
+}
+
+if(place_meeting(x,y,obj_wall))
     {
     if(obj_player.stuck=true)
             {
