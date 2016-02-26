@@ -128,6 +128,7 @@
     <instance objName="obj_roomend" x="1024" y="64" name="inst_A757BFA5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_roomend" x="1024" y="32" name="inst_ACF620A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_roomend" x="1024" y="0" name="inst_E012DE98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_control" x="0" y="0" name="inst_F3986650" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background_spikes" x="592" y="544" w="16" h="16" xo="18" yo="18" id="10000337" name="inst_68E3B5A7" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
