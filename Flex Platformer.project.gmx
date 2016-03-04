@@ -70,6 +70,7 @@
     <room>rooms\room_entrance</room>
     <room>rooms\cave_4</room>
     <room>rooms\cave_5</room>
+    <room>rooms\cave_6</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
