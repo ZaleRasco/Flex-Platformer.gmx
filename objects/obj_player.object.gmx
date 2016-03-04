@@ -28,6 +28,7 @@
             <string>///Initiation
 g=0.5
 death=false
+
 //Movement
 moving=false
 exiting=false
@@ -40,6 +41,8 @@ jump=false
 down=false
 up=false
 
+//Acceleration
+
 bubbleid=noone
 
 movespeed=4
@@ -47,6 +50,7 @@ airspeed=1
 maxspeed=8
 jumpheight=10
 jumpbuffer=0
+terminal=16
 
 bubblespeed=0.5
 walkspeed=5
@@ -188,7 +192,7 @@ if(stuck=false)
         hspeed=0
     }
 //Gravity and Falling
-    if(place_free(x,y+1)&amp;&amp;vspeed&lt;16)
+    if(place_free(x,y+1)&amp;&amp;vspeed&lt;terminal)
         {
         vspeed+=g
         }

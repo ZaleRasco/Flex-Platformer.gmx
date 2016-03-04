@@ -146,6 +146,8 @@
     <instance objName="obj_roomend" x="1056" y="0" name="inst_B8F3BFAD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="480" y="480" name="inst_31CDD941" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="512" y="480" name="inst_527790B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bouncy" x="704" y="608" name="inst_73C306AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bouncy" x="704" y="576" name="inst_8B453113" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tileset_beach" x="0" y="640" w="32" h="32" xo="0" yo="0" id="10000177" name="inst_E25EFCE4" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

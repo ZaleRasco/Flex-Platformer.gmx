@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1024</width>
   <height>768</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>16</vsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -163,6 +163,9 @@
     <instance objName="obj_roomend" x="1056" y="32" name="inst_DBC7D3D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_roomend" x="1056" y="0" name="inst_CFDF227E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_roomend" x="1056" y="96" name="inst_F8F2E81F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="672" y="448" name="inst_8D6C388B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_death" x="656" y="480" name="inst_0ED61A30" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_death" x="656" y="464" name="inst_EF5498DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tileset_beach" x="96" y="672" w="32" h="32" xo="0" yo="0" id="10000496" name="inst_1B4E4BD8" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -361,6 +364,9 @@
     <tile bgName="tileset_beach" x="768" y="576" w="32" h="32" xo="34" yo="0" id="10000826" name="inst_BDF0ACC0" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tileset_beach" x="800" y="592" w="32" h="32" xo="0" yo="0" id="10000828" name="inst_25121BC8" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background_spikes" x="656" y="496" w="16" h="16" xo="0" yo="18" id="10000829" name="inst_9400319D" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="672" y="448" w="32" h="32" xo="34" yo="0" id="10000855" name="inst_4822F372" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background_spikes" x="656" y="480" w="16" h="16" xo="0" yo="18" id="10000857" name="inst_A6B2E116" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background_spikes" x="656" y="464" w="16" h="16" xo="0" yo="18" id="10000858" name="inst_58B64505" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
