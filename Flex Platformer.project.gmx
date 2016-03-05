@@ -29,6 +29,7 @@
       <sprite>sprites\spr_bubblepop</sprite>
       <sprite>sprites\spr_bubble</sprite>
     </sprites>
+    <sprite>sprites\spr_exit</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Beach">
