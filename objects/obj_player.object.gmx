@@ -57,6 +57,67 @@ exitjump=false
         </arguments>
       </action>
     </event>
+    <event eventtype="3" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if stuck = true
+{
+hspeed = bubbleid.hspeed
+vspeed = bubbleid.vspeed
+x = bubbleid.x
+y = bubbleid.y
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>while place_meeting(x,y,obj_wall)
+{
+instance = instance_nearest(x,y,obj_wall)
+dirx = x - instance.x
+diry = y - instance.y
+dirx = abs(dirx)/dirx
+diry = abs(diry)/diry
+x+=dirx
+y+=diry
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -117,7 +178,11 @@ else
     {
     jump=false
     }
-
+if(left=true&amp;&amp;right=true)
+    {
+        left=false
+        right=false
+    }
 //Movement
 if(stuck=false)
 {
@@ -183,10 +248,7 @@ if(stuck=false)
         }
     }
     
-    if(left=true&amp;&amp;right=true)
-    {
-        hspeed=0
-    }
+    
 //Gravity and Falling
     if(place_free(x,y+1)&amp;&amp;vspeed&lt;16)
         {
@@ -464,6 +526,8 @@ if(instance_number(obj_bubble)&gt;0)
           <argument>
             <kind>1</kind>
             <string>///Bouncy
+if (stuck = false)
+{
 if(place_meeting(x,y+1,obj_bouncy))
 {
     jumping=false
@@ -483,6 +547,7 @@ if(place_meeting(x-1,y,obj_bouncy))
 {
     jumping=false
     hspeed=+14
+}
 }
 </string>
           </argument>

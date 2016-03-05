@@ -49,7 +49,73 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!place_free(x,y))
+            <string>
+
+if(place_meeting(x,y+1,obj_bouncy))
+{
+
+    vspeed=-14
+}
+if(place_meeting(x,y-1,obj_bouncy))
+{
+
+    vspeed=14
+}
+if(place_meeting(x+1,y,obj_bouncy))
+{
+
+    hspeed=-14
+}
+if(place_meeting(x-1,y,obj_bouncy))
+{
+
+    hspeed=+14
+}
+//collsions
+
+if(place_meeting(x,y+vspeed,obj_bouncy)&amp;&amp;vspeed&lt;0)
+        {
+        vspeed=0
+        move_contact_solid(90,vspeed)
+        }
+        
+    if(place_meeting(x,y+vspeed,obj_bouncy)&amp;&amp;vspeed&gt;0)
+        {
+        vspeed=0
+        move_contact_solid(270,vspeed)
+        }
+        
+    if(place_meeting(x+hspeed,y,obj_bouncy)&amp;&amp;hspeed&gt;0)
+        {
+        hspeed=0
+        move_contact_solid(0,hspeed)
+        }
+    
+    if(place_meeting(x+hspeed,y,obj_bouncy)&amp;&amp;hspeed&lt;0)
+        {
+        hspeed=0
+        move_contact_solid(180,hspeed)
+        }
+    
+        
+        
+    if(place_meeting(x+hspeed,y+vspeed,obj_bouncy))
+        {
+        dir=point_direction(x,y,x+hspeed,y+vspeed)
+        move_contact_solid(dir,speed)
+        if(abs(hspeed)&gt;abs(vspeed))
+        {
+        vspeed=0
+        }
+        else
+        {
+        hspeed=0
+        }
+        }
+
+//wall
+
+if (place_meeting(x,y,obj_wall)) or (x&lt;=-64)
     {
     if(obj_player.stuck=true)
             {

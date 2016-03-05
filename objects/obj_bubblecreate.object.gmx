@@ -48,7 +48,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (mybubble=noone)
+            <string>if !instance_exists(mybubble)
+{
+    mybubble=noone
+}
+if (mybubble=noone)
 {
 mybubble = instance_create(x,y,obj_bubble)
 }
