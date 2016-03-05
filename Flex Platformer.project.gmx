@@ -33,6 +33,7 @@
   <backgrounds name="background">
     <backgrounds name="Beach">
       <background>background\tileset_beach</background>
+      <background>background\back_neatth</background>
       <background>background\background_beach</background>
     </backgrounds>
     <background>background\background_spikes</background>
@@ -40,6 +41,8 @@
       <background>background\tileset_cave</background>
     </backgrounds>
     <background>background\background_cave</background>
+    <background>background\background6</background>
+    <background>background\background5</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
@@ -62,18 +65,20 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\cave_7</room>
     <room>rooms\beach_1</room>
     <room>rooms\beach_2</room>
-    <room>rooms\beach_3</room>
     <room>rooms\beach_4</room>
     <room>rooms\beach_5</room>
-    <room>rooms\room_entrance</room>
-    <room>rooms\room_longfall</room>
+    <room>rooms\cave_entrance</room>
+    <room>rooms\cave_transition</room>
+    <room>rooms\cave_1</room>
+    <room>rooms\cave_2</room>
+    <room>rooms\cave_3</room>
     <room>rooms\cave_4</room>
     <room>rooms\cave_5</room>
+    <room>rooms\cave_7</room>
     <room>rooms\cave_6</room>
-    <room>rooms\cave_transition</room>
+    <room>rooms\room_reset</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

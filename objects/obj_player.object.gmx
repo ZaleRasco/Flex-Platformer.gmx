@@ -90,6 +90,38 @@ y=bubbleid.y
         </arguments>
       </action>
     </event>
+    <event eventtype="3" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>while !place_free(x,y)
+{
+    instance=instance_nearest(x,y,obj_wall)
+    datx = x - instance.x
+    daty = y - instance.y
+    datx = abs(datx)/datx
+    daty = abs(daty)/daty
+    x+=datx
+    y+=daty
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -142,7 +174,7 @@ else
     {
     moving=true
     }
-if((keyboard_check_pressed(vk_space))&amp;&amp;!place_free(x,y+1)&amp;&amp;place_free(x,y-1))
+if((keyboard_check_pressed(vk_space)||keyboard_check_pressed(vk_up))&amp;&amp;!place_free(x,y+1)&amp;&amp;place_free(x,y-1))
     {
     jump=true
     }
@@ -547,7 +579,7 @@ if stuck=false
           <argument>
             <kind>1</kind>
             <string>draw_self()
-draw_text(100,100,obj_player.hspeed)
+
 </string>
           </argument>
         </arguments>

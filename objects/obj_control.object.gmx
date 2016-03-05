@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound(sound0_Longfall,10,true)
+            <string>window_set_fullscreen(false)
+audio_play_sound(sound0_Longfall,10,true)
 </string>
           </argument>
         </arguments>
@@ -98,6 +99,7 @@ else
 g=0.5
 }
 }
+
 </string>
           </argument>
         </arguments>
