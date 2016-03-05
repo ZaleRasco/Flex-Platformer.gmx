@@ -402,7 +402,7 @@ vspeed=0
 hspeed=0
 }
 
-if(x&lt;-64||y&lt;-64)
+if (y&lt;=-66) or (y&gt;=room_height+66) or (x&lt;=-66) or (x&gt;=room_width+66)
 {
 death=true
 }
