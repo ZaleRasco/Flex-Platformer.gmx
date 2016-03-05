@@ -74,7 +74,9 @@ exitjump=false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if stuck = true
+            <string>///Bubble syncing
+
+if stuck = true
 {
 hspeed = bubbleid.hspeed
 vspeed = bubbleid.vspeed
@@ -103,15 +105,15 @@ y = bubbleid.y
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>while place_meeting(x,y,obj_wall)
+            <string>///If stuck in wall
+
+while (place_meeting(x,y,obj_wall))
 {
-instance = instance_nearest(x,y,obj_wall)
-dirx = x - instance.x
-diry = y - instance.y
-dirx = abs(dirx)/dirx
-diry = abs(diry)/diry
-x+=dirx
-y+=diry
+    offender = instance_nearest(x+16,y+16,obj_wall)
+    toexit = point_direction(x,y,offender.x+16,offender.y+16)
+    x-=lengthdir_x(1,toexit)
+    y-=lengthdir_y(1,toexit)
+    
 }
 </string>
           </argument>
