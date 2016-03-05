@@ -43,7 +43,7 @@ up=false
 bubbleid=noone
 
 movespeed=4
-airspeed=1
+airspeed=0.8
 maxspeed=8
 jumpheight=10
 jumpbuffer=0
@@ -87,6 +87,29 @@ y = bubbleid.y
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Speed values for trampolines
+vvspeed=vspeed
+hhspeed=hspeed
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="3" enumb="1">
       <action>
@@ -105,7 +128,7 @@ y = bubbleid.y
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///If stuck in wall
+            <string>///Anti-Stuck Mechanic
 
 while (place_meeting(x,y,obj_wall))
 {
@@ -114,6 +137,47 @@ while (place_meeting(x,y,obj_wall))
     x-=lengthdir_x(1,toexit)
     y-=lengthdir_y(1,toexit)
     
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Speed Limits
+
+if(vspeed&gt;32)
+{
+    vspeed=32
+}
+
+if(vspeed&lt;-32)
+{
+    vspeed=-32
+}
+
+if(hspeed&gt;32)
+{
+    hspeed=32
+}
+
+if(hspeed&lt;-32)
+{
+    hspeed=-32
 }
 </string>
           </argument>
@@ -264,7 +328,7 @@ if(stuck=false)
     
     
 //Gravity and Falling
-    if(place_free(x,y+1)&amp;&amp;vspeed&lt;16)
+    if(place_free(x,y+1))
         {
         vspeed+=g
         }
@@ -541,28 +605,50 @@ if(instance_number(obj_bubble)&gt;0)
             <kind>1</kind>
             <string>///Bouncy
 if (stuck = false)
-{
-if(place_meeting(x,y+1,obj_bouncy))
-{
-    jumping=false
-    vspeed=-14
-}
-if(place_meeting(x,y-1,obj_bouncy))
-{
-    jumping=false
-    vspeed=+14
-}
-if(place_meeting(x+1,y,obj_bouncy))
-{
-    jumping=false
-    hspeed=-14
-}
-if(place_meeting(x-1,y,obj_bouncy))
-{
-    jumping=false
-    hspeed=+14
-}
-}
+    {
+    if(place_meeting(x,y+1,obj_bouncy))
+        {
+            jumping=false
+            vspeed=-14
+        }
+    if(place_meeting(x,y-1,obj_bouncy))
+        {
+            jumping=false
+            vspeed=14
+        }
+    if(place_meeting(x+1,y,obj_bouncy))
+        {
+            jumping=false
+            hspeed=-14
+        }
+    if(place_meeting(x-1,y,obj_bouncy))
+        {
+            jumping=false
+            hspeed=14
+        }
+    /* This is for trampolines
+    if(place_meeting(x,y+1,obj_bouncy))
+        {
+            jumping=false
+            vspeed=-vvspeed*1.1
+        }
+    if(place_meeting(x,y-1,obj_bouncy))
+        {
+            jumping=false
+            vspeed=-vvspeed*1.1
+        }
+    if(place_meeting(x+1,y,obj_bouncy))
+        {
+            jumping=false
+            hspeed=-hhspeed*1.1
+        }
+    if(place_meeting(x-1,y,obj_bouncy))
+        {
+            jumping=false
+            hspeed=+-hhspeed*1.1
+        }
+    */
+    }
 </string>
           </argument>
         </arguments>

@@ -74,6 +74,8 @@
     <room>rooms\cave_3</room>
     <room>rooms\cave_4</room>
     <room>rooms\cave_5</room>
+    <room>rooms\cave_6</room>
+    <room>rooms\cave_7</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
