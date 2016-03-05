@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sound0_Longfall</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
     <sprites name="Obstacles">
@@ -32,9 +34,12 @@
     <backgrounds name="Beach">
       <background>background\tileset_beach</background>
       <background>background\background_beach</background>
-      <background>background\tileset_cave</background>
     </backgrounds>
     <background>background\background_spikes</background>
+    <backgrounds name="Cave">
+      <background>background\tileset_cave</background>
+    </backgrounds>
+    <background>background\background_cave</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
@@ -66,6 +71,8 @@
     <room>rooms\cave_1</room>
     <room>rooms\cave_2</room>
     <room>rooms\cave_3</room>
+    <room>rooms\cave_4</room>
+    <room>rooms\cave_5</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

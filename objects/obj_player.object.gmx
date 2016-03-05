@@ -123,12 +123,10 @@ if(stuck=false)
 {
     if(left)
     {
-    
         if(hspeed&gt;-maxspeed)
         {
-            if(!(maxspeed&gt;(hspeed-movespeed)))
+            if(!(-maxspeed&gt;(hspeed-movespeed)))
             {
-            
                 if(place_free(x,y+1))
                     {
                     hspeed-=airspeed
@@ -189,7 +187,7 @@ if(stuck=false)
     {
         hspeed=0
     }
-    //Gravity and Falling
+//Gravity and Falling
     if(place_free(x,y+1)&amp;&amp;vspeed&lt;16)
         {
         vspeed+=g
@@ -235,7 +233,7 @@ if(stuck=false)
         }
     }
     
-    //Jumping
+//Jumping
     if(jump=true||exitjump=true)
         {
         jumping=true
@@ -466,10 +464,25 @@ if(instance_number(obj_bubble)&gt;0)
           <argument>
             <kind>1</kind>
             <string>///Bouncy
-if(place_meeting(x,y,obj_bouncy)&amp;&amp;place_free(x,y-1))
+if(place_meeting(x,y+1,obj_bouncy))
 {
-jumping=false
-vspeed=-14
+    jumping=false
+    vspeed=-14
+}
+if(place_meeting(x,y-1,obj_bouncy))
+{
+    jumping=false
+    vspeed=14
+}
+if(place_meeting(x+1,y,obj_bouncy))
+{
+    jumping=false
+    hspeed=-14
+}
+if(place_meeting(x-1,y,obj_bouncy))
+{
+    jumping=false
+    hspeed=+14
 }
 </string>
           </argument>
