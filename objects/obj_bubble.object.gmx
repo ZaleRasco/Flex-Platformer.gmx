@@ -49,9 +49,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-
-if(place_meeting(x,y+1,obj_bouncy))
+            <string>if(place_meeting(x,y+1,obj_bouncy))
 {
 
     vspeed=-14
