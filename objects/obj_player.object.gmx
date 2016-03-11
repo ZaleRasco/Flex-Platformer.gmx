@@ -40,11 +40,14 @@ jump=false
 down=false
 up=false
 
+trampoline=false
+
 bubbleid=noone
 
 movespeed=4
 airspeed=0.8
 maxspeed=8
+
 jumpheight=10
 jumpbuffer=0
 
@@ -236,7 +239,7 @@ else
     {
     moving=true
     }
-if((keyboard_check_pressed(vk_space))&amp;&amp;!place_free(x,y+1)&amp;&amp;place_free(x,y-1))
+if((keyboard_check_pressed(vk_space)||keyboard_check_pressed(vk_up))&amp;&amp;!place_free(x,y+1)&amp;&amp;place_free(x,y-1))
     {
     jump=true
     }
@@ -380,7 +383,7 @@ if(stuck=false)
         vspeed=-jumpheight
         exitjump=false
         }
-    else if (keyboard_check_pressed(vk_space)||keyboard_check_pressed(vk_up)&amp;&amp;(place_free(x,y+1)))
+    else if ((jump)&amp;&amp;(place_free(x,y+1)))
         {
         jumpbuffer=6
         }
@@ -402,7 +405,7 @@ if(stuck=false)
                 }
         }
     
-    if((keyboard_check_released(vk_space))&amp;&amp;(place_free(x,y+1))&amp;&amp;jumping==true)
+    if(((keyboard_check_released(vk_space))||(keyboard_check_released(vk_up)))&amp;&amp;(place_free(x,y+1))&amp;&amp;jumping==true)
         {
         if (vspeed&lt;0)
             {
@@ -460,12 +463,14 @@ room_goto_next()
             <string>///Death and respawn
 if(death=true)
 {
-death=false
-stuck=false
-x=obj_roomstart.x
-y=obj_roomstart.y
-vspeed=0
-hspeed=0
+    room_restart()
+    /*
+    death=false
+    stuck=false
+    x=obj_roomstart.x
+    y=obj_roomstart.y
+    vspeed=0
+    hspeed=0 */
 }
 
 if (y&lt;=-66) or (y&gt;=room_height+66) or (x&lt;=-66) or (x&gt;=room_width+66)
@@ -606,48 +611,54 @@ if(instance_number(obj_bubble)&gt;0)
             <string>///Bouncy
 if (stuck = false)
     {
-    if(place_meeting(x,y+1,obj_bouncy))
+    if(trampoline=false)
+    {
+        if(place_meeting(x,y+1,obj_bouncy))
+            {
+                jumping=false
+                vspeed=-14
+            }
+        if(place_meeting(x,y-1,obj_bouncy))
+            {
+                jumping=false
+                vspeed=14
+            }
+        if(place_meeting(x+1,y,obj_bouncy))
+            {
+                jumping=false
+                hspeed=-14
+            }
+        if(place_meeting(x-1,y,obj_bouncy))
+            {
+                jumping=false
+                hspeed=14
+            }
+    }
+    
+    else if(trampoline=true)
         {
-            jumping=false
-            vspeed=-14
+    
+        if(place_meeting(x,y+1,obj_bouncy))
+            {
+                jumping=false
+                vspeed=-vvspeed*1.1
+            }
+        if(place_meeting(x,y-1,obj_bouncy))
+            {
+                jumping=false
+                vspeed=-vvspeed*1.1
+            }
+        if(place_meeting(x+1,y,obj_bouncy))
+            {
+                jumping=false
+                hspeed=-hhspeed*1.1
+            }
+        if(place_meeting(x-1,y,obj_bouncy))
+            {
+                jumping=false
+                hspeed=+-hhspeed*1.1
+            }
         }
-    if(place_meeting(x,y-1,obj_bouncy))
-        {
-            jumping=false
-            vspeed=14
-        }
-    if(place_meeting(x+1,y,obj_bouncy))
-        {
-            jumping=false
-            hspeed=-14
-        }
-    if(place_meeting(x-1,y,obj_bouncy))
-        {
-            jumping=false
-            hspeed=14
-        }
-    /* This is for trampolines
-    if(place_meeting(x,y+1,obj_bouncy))
-        {
-            jumping=false
-            vspeed=-vvspeed*1.1
-        }
-    if(place_meeting(x,y-1,obj_bouncy))
-        {
-            jumping=false
-            vspeed=-vvspeed*1.1
-        }
-    if(place_meeting(x+1,y,obj_bouncy))
-        {
-            jumping=false
-            hspeed=-hhspeed*1.1
-        }
-    if(place_meeting(x-1,y,obj_bouncy))
-        {
-            jumping=false
-            hspeed=+-hhspeed*1.1
-        }
-    */
     }
 </string>
           </argument>
@@ -672,7 +683,6 @@ if (stuck = false)
           <argument>
             <kind>1</kind>
             <string>draw_self()
-draw_text(100,100,obj_player.hspeed)
 </string>
           </argument>
         </arguments>
