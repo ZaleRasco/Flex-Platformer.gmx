@@ -33,6 +33,14 @@
     <sprite>sprites\spr_victory</sprite>
     <sprite>sprites\spr_setplant</sprite>
     <sprite>sprites\spr_setbullet</sprite>
+    <sprite>sprites\spr_buttonb</sprite>
+    <sprite>sprites\sprite19</sprite>
+    <sprite>sprites\sprite21</sprite>
+    <sprite>sprites\sprite24</sprite>
+    <sprite>sprites\spr_buttonwallb</sprite>
+    <sprite>sprites\sprite23</sprite>
+    <sprite>sprites\sprite22</sprite>
+    <sprite>sprites\sprite20</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Beach">
@@ -65,8 +73,13 @@
       <object>objects\obj_roomend</object>
     </objects>
     <object>objects\obj_victory</object>
-    <object>objects\obj_setplant</object>
+    <object>objects\obj_setplantright</object>
+    <object>objects\obj_setplantleft</object>
+    <object>objects\obj_setplantup</object>
+    <object>objects\obj_setplantdown</object>
     <object>objects\obj_setplantbullet</object>
+    <object>objects\obj_buttonb</object>
+    <object>objects\obj_buttonwallb</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\beach_1</room>
@@ -83,6 +96,7 @@
     <room>rooms\cave_6</room>
     <room>rooms\cave_7</room>
     <room>rooms\win_room</room>
+    <room>rooms\forest_1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

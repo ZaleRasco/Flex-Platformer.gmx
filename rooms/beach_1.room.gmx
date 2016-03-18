@@ -143,7 +143,6 @@
     <instance objName="obj_death" x="624" y="720" name="inst_19E49CB5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_death" x="640" y="720" name="inst_31062889" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_death" x="656" y="720" name="inst_162ED9AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_setplant" x="224" y="608" name="inst_35B52FAE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background_spikes" x="256" y="720" w="16" h="16" xo="0" yo="0" id="10000827" name="inst_11B64622" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

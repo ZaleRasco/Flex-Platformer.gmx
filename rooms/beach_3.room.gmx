@@ -296,6 +296,20 @@
     <tile bgName="tileset_beach" x="736" y="704" w="32" h="32" xo="0" yo="0" id="10001295" name="inst_E6660D81" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tileset_beach" x="704" y="704" w="32" h="32" xo="0" yo="0" id="10001296" name="inst_E557F4AC" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tileset_beach" x="704" y="672" w="32" h="32" xo="0" yo="0" id="10001297" name="inst_557194D5" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background_spikes" x="256" y="480" w="16" h="16" xo="18" yo="0" id="10001368" name="inst_CB69C78C" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background_spikes" x="256" y="496" w="16" h="16" xo="18" yo="0" id="10001369" name="inst_15C0628A" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background_spikes" x="256" y="512" w="16" h="16" xo="18" yo="0" id="10001370" name="inst_081F1BBC" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background_spikes" x="256" y="528" w="16" h="16" xo="18" yo="0" id="10001371" name="inst_01FEF4CC" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background_spikes" x="256" y="544" w="16" h="16" xo="18" yo="0" id="10001372" name="inst_CAD97DC5" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background_spikes" x="256" y="560" w="16" h="16" xo="18" yo="0" id="10001373" name="inst_5FC79AE8" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="224" y="480" w="32" h="32" xo="0" yo="0" id="10001374" name="inst_FB1B862E" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="224" y="512" w="32" h="32" xo="0" yo="0" id="10001375" name="inst_E535C61A" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="224" y="544" w="32" h="32" xo="0" yo="0" id="10001376" name="inst_14E20B3F" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="464" y="320" w="32" h="32" xo="0" yo="0" id="10001377" name="inst_4CEE1935" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="496" y="320" w="32" h="32" xo="0" yo="0" id="10001378" name="inst_C2E300FD" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="528" y="320" w="32" h="32" xo="0" yo="0" id="10001379" name="inst_44B2DF75" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="640" y="448" w="32" h="32" xo="0" yo="0" id="10001380" name="inst_E4F0E6DB" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset_beach" x="672" y="448" w="32" h="32" xo="0" yo="0" id="10001381" name="inst_DC0D376D" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
