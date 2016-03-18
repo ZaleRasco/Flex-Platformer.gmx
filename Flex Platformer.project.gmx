@@ -41,6 +41,7 @@
     <sprite>sprites\sprite23</sprite>
     <sprite>sprites\sprite22</sprite>
     <sprite>sprites\sprite20</sprite>
+    <sprite>sprites\spr_small_crab</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Beach">
@@ -52,6 +53,7 @@
       <background>background\tileset_cave</background>
     </backgrounds>
     <background>background\background_cave</background>
+    <background>background\background5</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
@@ -83,7 +85,6 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\beach_1</room>
-    <room>rooms\cave_7</room>
     <room>rooms\beach_2</room>
     <room>rooms\beach_3</room>
     <room>rooms\beach_4</room>
@@ -95,6 +96,7 @@
     <room>rooms\cave_4</room>
     <room>rooms\cave_5</room>
     <room>rooms\cave_6</room>
+    <room>rooms\cave_7</room>
     <room>rooms\win_room</room>
     <room>rooms\forest_1</room>
     <room>rooms\boss_CRAB</room>
