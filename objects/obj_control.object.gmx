@@ -2,7 +2,7 @@
 <object>
   <spriteName>spr_control</spriteName>
   <solid>0</solid>
-  <visible>0</visible>
+  <visible>-1</visible>
   <depth>0</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -25,7 +25,18 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>if(room=beach_1)
+{
+tick=0
+seconds=0
+minutes=0
+hours=0
+}
+
+secondstring=noone
+minutestring=noone
+hourstring=noone
+</string>
           </argument>
         </arguments>
       </action>
@@ -117,12 +128,130 @@ if(keyboard_check_pressed(ord('G')))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//timer
-global.seconds+=1
-var minutes, hours, secs;
-secs = seconds mod 60;
-minutes = (seconds div 60) mod 60;
-hours =  (seconds div 60) div 60;
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Timer
+
+tick+=10/6
+
+if(tick&gt;=100)
+{
+tick=0
+seconds++
+}
+
+if(seconds&gt;+60)
+{
+seconds=0
+minutes++
+}
+
+if(minutes&gt;=60)
+{
+minutes=0
+hours++
+}
+
+if(tick&lt;10)
+{
+tickstring=string_insert("0",string(round(tick)),0)
+}
+
+else
+{
+tickstring=round(tick)
+}
+
+if(seconds&lt;10)
+{
+secondstring=string_insert("0",string(seconds),0)
+}
+else
+{
+secondstring=seconds
+}
+
+if(minutes&lt;10)
+{
+minutestring=string_insert("0",string(minutes),0)
+}
+else
+{
+minutestring=minutes
+}
+
+if(hours&lt;10)
+{
+hourstring=string_insert("0",string(hours),0)
+}
+else
+{
+hourstring=hours
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_text(100,50,string(hourstring)+":"+string(minutestring)+":"+string(secondstring)+":"+string(tickstring))
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///No Draw Self
 </string>
           </argument>
         </arguments>

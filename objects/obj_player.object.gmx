@@ -45,7 +45,7 @@ trampoline=false
 bubbleid=noone
 
 movespeed=4
-airspeed=0.8
+airspeed=1
 maxspeed=8
 
 jumpheight=10
@@ -482,6 +482,11 @@ if place_meeting(x,y,obj_death)
 {
     death=true
 }
+
+if place_meeting(x,y,obj_setplantbullet)
+{
+    death=true
+}
 </string>
           </argument>
         </arguments>
@@ -506,6 +511,7 @@ if place_meeting(x,y,obj_death)
 oldbubbleid=bubbleid
 bubbleid=instance_nearest(x,y,obj_bubble)
 
+//Entering
 if(instance_number(obj_bubble)&gt;0)
     {
     if(stuck=false)
@@ -541,6 +547,8 @@ if(instance_number(obj_bubble)&gt;0)
             exiting=false
             }
         }
+        
+//Exiting
     if(stuck=true)
         {
         if(down=true)
@@ -548,23 +556,31 @@ if(instance_number(obj_bubble)&gt;0)
             exiting=true
             stuck=false
             }
-        if(keyboard_check_pressed(vk_space))
+        if(keyboard_check_pressed(vk_space)||keyboard_check_pressed(vk_up))
             {
             if(bubbleid.vspeed&lt;=0)
                 {
                 bubbleid.vspeed+=6
                 }
-            bubbleid.hspeed-=obj_player.hspeed*1.5
+            bubbleid.hspeed-=obj_player.hspeed*2
             exiting=true
             stuck=false
             exitjump=true
             }
-        if(hspeed&gt;0&amp;&amp;obj_player.moving=false)
+        if(hspeed&gt;3&amp;&amp;obj_player.moving=false)
+            {
+            hspeed-=hspeed/2
+            }
+        else if(hspeed&gt;0&amp;&amp;obj_player.moving=false)
             {
             hspeed-=0.1
             }
     
-        if(hspeed&lt;0&amp;&amp;obj_player.moving=false)
+        if(hspeed&lt;-3&amp;&amp;obj_player.moving=false)
+            {
+            hspeed+=hspeed/2
+            }
+        else if(hspeed&lt;0&amp;&amp;obj_player.moving=false)
             {
             hspeed+=0.1
             }
