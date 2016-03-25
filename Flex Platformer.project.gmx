@@ -51,7 +51,6 @@
     <sprite>sprites\spr_small_crab</sprite>
     <sprite>sprites\spr_crumble</sprite>
     <sprite>sprites\spr_sponage</sprite>
-    <sprite>sprites\spr_sponage_woosh</sprite>
     <sprite>sprites\spr__right_claw</sprite>
 =======
     <sprite>sprites\sprite26</sprite>
@@ -71,8 +70,6 @@
   </backgrounds>
   <paths name="paths">
     <path>paths\path0</path>
-    <path>paths\path1</path>
-    <path>paths\path2</path>
   </paths>
   <objects name="objects">
     <object>objects\obj_player</object>
