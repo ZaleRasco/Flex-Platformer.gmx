@@ -61,7 +61,9 @@
     <background>background\background_cave</background>
     <background>background\background_5</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\path0</path>
+  </paths>
   <objects name="objects">
     <object>objects\obj_player</object>
     <objects name="Obstacles">
@@ -88,6 +90,7 @@
     <object>objects\obj_setplantbullet</object>
     <object>objects\obj_buttonb</object>
     <object>objects\obj_buttonwallb</object>
+    <object>objects\obj_small_crab</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\beach_1</room>
