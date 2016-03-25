@@ -8,12 +8,20 @@
     <sound>sound\sound0_Longfall</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\spr_player</sprite>
+    <sprites name="Player">
+      <sprite>sprites\spr_playerright</sprite>
+      <sprite>sprites\spr_playerleft</sprite>
+      <sprite>sprites\spr_playeridleleft</sprite>
+      <sprite>sprites\spr_playeridleright</sprite>
+    </sprites>
     <sprites name="Obstacles">
       <sprite>sprites\spr_spikesright</sprite>
       <sprite>sprites\spr_spikes</sprite>
       <sprite>sprites\spr_spikesdown</sprite>
       <sprite>sprites\spr_death</sprite>
+      <sprite>sprites\spr_setplant</sprite>
+      <sprite>sprites\spr_small_crab</sprite>
+      <sprite>sprites\spr_setbullet</sprite>
     </sprites>
     <sprites name="Terrain">
       <sprite>sprites\spr_bouncy</sprite>
@@ -28,11 +36,9 @@
       <sprite>sprites\spr_bubblecreate</sprite>
       <sprite>sprites\spr_bubblepop</sprite>
       <sprite>sprites\spr_bubble</sprite>
+      <sprite>sprites\spr_exit</sprite>
+      <sprite>sprites\spr_victory</sprite>
     </sprites>
-    <sprite>sprites\spr_exit</sprite>
-    <sprite>sprites\spr_victory</sprite>
-    <sprite>sprites\spr_setplant</sprite>
-    <sprite>sprites\spr_setbullet</sprite>
     <sprite>sprites\spr_buttonb</sprite>
     <sprite>sprites\sprite19</sprite>
     <sprite>sprites\sprite21</sprite>
@@ -41,11 +47,15 @@
     <sprite>sprites\sprite23</sprite>
     <sprite>sprites\sprite22</sprite>
     <sprite>sprites\sprite20</sprite>
+<<<<<<< HEAD
     <sprite>sprites\spr_small_crab</sprite>
     <sprite>sprites\spr_crumble</sprite>
     <sprite>sprites\spr_sponage</sprite>
     <sprite>sprites\spr_sponage_woosh</sprite>
     <sprite>sprites\spr__right_claw</sprite>
+=======
+    <sprite>sprites\sprite26</sprite>
+>>>>>>> origin/master
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Beach">
@@ -57,7 +67,7 @@
       <background>background\tileset_cave</background>
     </backgrounds>
     <background>background\background_cave</background>
-    <background>background\background5</background>
+    <background>background\background_5</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path0</path>
