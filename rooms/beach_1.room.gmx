@@ -151,6 +151,10 @@
     <instance objName="obj_bouncy" x="256" y="576" name="inst_1008BE8C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bouncy" x="256" y="544" name="inst_C0E13D91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bouncy" x="256" y="512" name="inst_7B7E3BBD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_small_crab" x="224" y="576" name="inst_6AC8BFA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_small_crab" x="736" y="544" name="inst_79BD6BD0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_small_crab" x="480" y="608" name="inst_1FA27E19" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_small_crab" x="896" y="576" name="inst_FC1D58B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background_spikes" x="256" y="720" w="16" h="16" xo="0" yo="0" id="10000827" name="inst_11B64622" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
