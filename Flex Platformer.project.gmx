@@ -59,7 +59,7 @@
       <background>background\tileset_cave</background>
     </backgrounds>
     <background>background\background_cave</background>
-    <background>background\background_5</background>
+    <background>background\background_forest</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path0</path>
@@ -98,7 +98,7 @@
     <room>rooms\beach_3</room>
     <room>rooms\beach_4</room>
     <room>rooms\beach_5</room>
-    <room>rooms\room_entrance</room>
+    <room>rooms\room_longfall</room>
     <room>rooms\cave_1</room>
     <room>rooms\cave_2</room>
     <room>rooms\cave_3</room>
@@ -106,9 +106,9 @@
     <room>rooms\cave_5</room>
     <room>rooms\cave_6</room>
     <room>rooms\cave_7</room>
-    <room>rooms\win_room</room>
+    <room>rooms\room_crab</room>
     <room>rooms\forest_1</room>
-    <room>rooms\boss_CRAB</room>
+    <room>rooms\win_room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
