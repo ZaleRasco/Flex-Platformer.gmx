@@ -3,7 +3,7 @@
   <spriteName>spr_playeridleleft</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-1</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -306,6 +306,7 @@ else
             <string>///Movement and Jumping
 ///Movement
 if(stuck=false)
+{
 if (left &amp;&amp; moving)
 {
     if (hspeed &gt; -maxspeed)
@@ -515,6 +516,7 @@ room_goto_next()
 if (death = true)
 {
     room_restart()
+    sprite=spr_playeridleleft
 }
 
 if (y &lt;= -66) or(y &gt;= room_height + 66) or(x &lt;= -66) or(x &gt;= room_width + 66)

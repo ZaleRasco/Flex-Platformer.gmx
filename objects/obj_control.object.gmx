@@ -215,6 +215,7 @@ hourstring=hours
             <string>///Info Drawn
 
 draw_text(100,50,string(hourstring)+":"+string(minutestring)+":"+string(secondstring)+":"+string(tickstring))
+draw_text(100,25,fps)
 </string>
           </argument>
         </arguments>

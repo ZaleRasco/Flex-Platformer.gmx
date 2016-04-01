@@ -99,9 +99,13 @@
     <object>objects\obj_buttonb</object>
     <object>objects\obj_buttonwallb</object>
     <object>objects\obj_small_crab</object>
+    <object>objects\obj_cutter</object>
+    <object>objects\obj_crusher</object>
+    <object>objects\obj_rise</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\beach_1</room>
+    <room>rooms\room_crab</room>
     <room>rooms\beach_2</room>
     <room>rooms\beach_3</room>
     <room>rooms\beach_4</room>
@@ -114,7 +118,6 @@
     <room>rooms\cave_5</room>
     <room>rooms\cave_6</room>
     <room>rooms\cave_7</room>
-    <room>rooms\room_crab</room>
     <room>rooms\forest_1</room>
     <room>rooms\win_room</room>
   </rooms>
