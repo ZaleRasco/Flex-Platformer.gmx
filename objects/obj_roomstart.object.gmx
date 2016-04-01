@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x+16,y+16,obj_player)
+            <string>///Spawn Player
+
+instance_create(x+16,y+16,obj_player)
 </string>
           </argument>
         </arguments>
