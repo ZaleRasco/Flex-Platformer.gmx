@@ -464,7 +464,7 @@ if (((keyboard_check_released(vk_space)) || (keyboard_check_released(vk_up))) &a
     }
     jump = false
 }
-}
+
 </string>
           </argument>
         </arguments>
