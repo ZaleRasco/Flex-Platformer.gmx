@@ -49,11 +49,12 @@ uprel=false
 movespeed=4
 airspeed=1
 maxspeed=8
+bubblespeed=2
 
 jumpheight=10
 jumpbuffer=0
 
-bubblespeed=0.5
+bubblespeed=3
 walkspeed=5
 
 exitjump=false
@@ -599,8 +600,7 @@ if (instance_number(obj_bubble) &gt; 0)
     {
         if (down = true)
         {
-            exiting = true
-            stuck = false
+            bubblespeed=-1
         }
         if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up))
         {

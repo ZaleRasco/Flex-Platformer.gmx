@@ -50,7 +50,7 @@
             <kind>1</kind>
             <string>if(y=4780)
 { 
-obj_player.vspeed-=22
+obj_player.vspeed-=26
 }
 </string>
           </argument>
