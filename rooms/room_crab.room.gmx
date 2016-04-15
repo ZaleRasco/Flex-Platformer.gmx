@@ -54,7 +54,6 @@
     <instance objName="obj_wall" x="992" y="0" name="inst_0FA106FB" locked="0" code="" scaleX="1" scaleY="150" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="0" y="0" name="inst_F2FB8182" locked="0" code="" scaleX="31" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="0" y="4768" name="inst_D7AD0FD9" locked="0" code="" scaleX="31" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_roomstart" x="64" y="4736" name="inst_34409A15" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bubblecreate" x="512" y="4256" name="inst_6162CEA5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="0" y="3936" name="inst_300B0F96" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="0" y="3904" name="inst_465BE59E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -494,8 +493,7 @@
     <instance objName="obj_wall" x="576" y="4608" name="inst_BE506711" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="608" y="4608" name="inst_3673B1D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_roomstart" x="512" y="4576" name="inst_A61F862E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_roomstart" x="704" y="4576" name="inst_DCED3C66" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
->>>>>>> ace7df21e19562de6ea864c3e1a4ac37adacccf9
+    <instance objName="&lt;undefined&gt;" x="0" y="0" name="" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background_spikes" x="32" y="3968" w="16" h="16" xo="18" yo="18" id="10001382" name="inst_E4D085D6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
