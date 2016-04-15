@@ -471,7 +471,7 @@ if(jumping=true&amp;&amp;place_free(x,y-1))
 sprite_index=spr_playerjumpright
 }
 }
-}
+
 </string>
           </argument>
         </arguments>
