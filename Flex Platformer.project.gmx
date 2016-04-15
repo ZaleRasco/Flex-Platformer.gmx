@@ -4,9 +4,7 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound">
-    <sound>sound\sound0_Longfall</sound>
-  </sounds>
+  <sounds name="sound"/>
   <sprites name="sprites">
     <sprites name="Buttons">
       <sprite>sprites\spr_buttonb</sprite>
@@ -80,7 +78,6 @@
     <path>paths\path2</path>
   </paths>
   <objects name="objects">
-    <object>objects\obj_player</object>
     <objects name="Obstacles">
       <object>objects\obj_death</object>
     </objects>
@@ -117,16 +114,16 @@
     <object>objects\obj_cutter</object>
     <object>objects\obj_crusher</object>
     <object>objects\obj_rise</object>
+    <object>objects\obj_player</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\beach_1</room>
+    <room>rooms\room_crab</room>
     <room>rooms\beach_2</room>
     <room>rooms\beach_3</room>
     <room>rooms\beach_4</room>
     <room>rooms\beach_5</room>
     <room>rooms\cave_entrance</room>
-    <room>rooms\cave_transition</room>
-    <room>rooms\room_longfall</room>
     <room>rooms\cave_1</room>
     <room>rooms\cave_2</room>
     <room>rooms\cave_3</room>
@@ -134,8 +131,6 @@
     <room>rooms\cave_5</room>
     <room>rooms\cave_6</room>
     <room>rooms\cave_7</room>
-    <room>rooms\room_crab</room>
-    <room>rooms\win_room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
