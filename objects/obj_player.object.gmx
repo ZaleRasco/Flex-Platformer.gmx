@@ -49,7 +49,7 @@ uprel=false
 movespeed=4
 airspeed=1
 maxspeed=8
-bubblespeed=2
+bubblespeed=6
 bubblevspeed=-2
 jumpheight=10
 jumpbuffer=0
@@ -466,12 +466,8 @@ if (((keyboard_check_released(vk_space)) || (keyboard_check_released(vk_up))) &a
     }
     jumping = false
 }
-if(jumping=true&amp;&amp;place_free(x,y-1))
-{
-sprite_index=spr_playerjumpright
 }
-}
-}
+
 </string>
           </argument>
         </arguments>
@@ -605,7 +601,7 @@ if (instance_number(obj_bubble) &gt; 0)
     {
         if (down = true)
         {
-            bubblespeed=-1
+            bubbleid.vspeed=-1
         }
         if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up))
         {
@@ -639,18 +635,18 @@ if (instance_number(obj_bubble) &gt; 0)
         vspeed = bubbleid.vspeed
         if (left)
         {
-            if (hspeed &gt; -walkspeed)
+            if (hspeed &gt; -bubblespeed)
             {
-                hspeed -= bubblespeed
-                bubbleid.hspeed -= bubblespeed
+                hspeed -= 0.3
+                bubbleid.hspeed -= 0.3
             }
         }
         if (right)
         {
-            if (hspeed &lt; walkspeed)
+            if (hspeed &lt; bubblespeed)
             {
-                hspeed += bubblespeed
-                bubbleid.hspeed += bubblespeed
+                hspeed += 0.5
+                bubbleid.hspeed += 0.5
             }
         }
     }
@@ -767,6 +763,7 @@ if (stuck = false)
         }
     }
 }
+
 </string>
           </argument>
         </arguments>
