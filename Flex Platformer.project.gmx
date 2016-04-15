@@ -23,6 +23,10 @@
       <sprite>sprites\spr_playerleft</sprite>
       <sprite>sprites\spr_playeridleleft</sprite>
       <sprite>sprites\spr_playeridleright</sprite>
+      <sprite>sprites\spr_playerjumpright</sprite>
+      <sprite>sprites\spr_fallright</sprite>
+      <sprite>sprites\spr_playerfallleft</sprite>
+      <sprite>sprites\spr_playerjumpleft</sprite>
     </sprites>
     <sprites name="Obstacles">
       <sprite>sprites\spr_spikesright</sprite>
@@ -32,8 +36,8 @@
       <sprite>sprites\spr_setplant</sprite>
       <sprite>sprites\spr_setbullet</sprite>
       <sprite>sprites\spr_right_claw</sprite>
-      <sprite>sprites\spr_crab</sprite>
       <sprite>sprites\spr_left_claw</sprite>
+      <sprite>sprites\spr_crab_body</sprite>
     </sprites>
     <sprites name="Terrain">
       <sprite>sprites\spr_bouncy</sprite>
@@ -55,6 +59,7 @@
     <sprite>sprites\spr_crumble</sprite>
     <sprite>sprites\spr_sponage</sprite>
     <sprite>sprites\spr_sponage_woosh</sprite>
+    <sprite>sprites\spr_frog</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Beach">
