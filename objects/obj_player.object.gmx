@@ -50,7 +50,7 @@ movespeed=4
 airspeed=1
 maxspeed=8
 bubblespeed=2
-
+bubblevspeed=-2
 jumpheight=10
 jumpbuffer=0
 
@@ -469,6 +469,7 @@ if (((keyboard_check_released(vk_space)) || (keyboard_check_released(vk_up))) &a
 if(jumping=true&amp;&amp;place_free(x,y-1))
 {
 sprite_index=spr_playerjumpright
+}
 }
 }
 </string>

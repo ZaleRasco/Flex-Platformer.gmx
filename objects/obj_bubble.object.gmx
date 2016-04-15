@@ -123,11 +123,11 @@ if (place_meeting(x,y,obj_wall)) or place_meeting(x,y,obj_death) or (y&lt;=-66) 
     }
 if(activated=true)
 {
-    if(vspeed&gt;obj_player.bubblespeed)
+    if(vspeed&gt;obj_player.bubblevspeed)
     {
         vspeed-=0.15
     }
-    else if (vspeed&lt;obj_player.bubblespeed)
+    else if (vspeed&lt;obj_player.bubblevspeed)
     {
     vspeed+=0.15
     }

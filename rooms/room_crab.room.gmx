@@ -54,7 +54,6 @@
     <instance objName="obj_wall" x="992" y="0" name="inst_0FA106FB" locked="0" code="" scaleX="1" scaleY="150" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="0" y="0" name="inst_F2FB8182" locked="0" code="" scaleX="31" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="0" y="4768" name="inst_D7AD0FD9" locked="0" code="" scaleX="31" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_roomstart" x="64" y="4736" name="inst_34409A15" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bubblecreate" x="512" y="4256" name="inst_6162CEA5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="0" y="3936" name="inst_300B0F96" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="0" y="3904" name="inst_465BE59E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

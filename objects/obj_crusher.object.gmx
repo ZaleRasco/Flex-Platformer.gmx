@@ -3,7 +3,7 @@
   <spriteName>spr_right_claw</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-1000000</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>vspeed=-2
+launched=false
 </string>
           </argument>
         </arguments>
@@ -48,9 +49,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(y=4780)
+            <string>if(y&lt;4780) and (launched = false)
 { 
 obj_player.vspeed-=26
+launched = true
 }
 </string>
           </argument>
