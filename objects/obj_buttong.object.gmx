@@ -27,9 +27,9 @@
             <kind>1</kind>
             <string>if(place_meeting(x,y,obj_player))
 {
-    for(i=instance_number(obj_buttonwallb); i&gt;0; i--)
+    for(i=instance_number(obj_buttonwallg); i&gt;=0; i--)
     {
-        with (instance_find(obj_buttonwallb,i))
+        with (instance_find(obj_buttonwallg,i))
         {
         instance_destroy()
         }
