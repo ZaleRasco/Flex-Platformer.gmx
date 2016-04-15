@@ -15,8 +15,8 @@
       <sprite>sprites\spr_buttony</sprite>
       <sprite>sprites\spr_buttonwallb</sprite>
       <sprite>sprites\spr_buttonwallr</sprite>
-      <sprite>sprites\spr_buttonwallg</sprite>
       <sprite>sprites\spr_buttonwally</sprite>
+      <sprite>sprites\spr_buttonwallg</sprite>
     </sprites>
     <sprites name="Player">
       <sprite>sprites\spr_playerright</sprite>
@@ -68,6 +68,7 @@
     <background>background\background_spikes</background>
     <backgrounds name="Cave">
       <background>background\tileset_cave</background>
+      <background>background\back_neatth</background>
     </backgrounds>
     <background>background\background_cave</background>
     <background>background\background_forest</background>
@@ -95,14 +96,22 @@
       <object>objects\obj_roomstart</object>
       <object>objects\obj_roomend</object>
     </objects>
+    <objects name="Buttons">
+      <object>objects\obj_buttonb</object>
+      <object>objects\obj_buttonr</object>
+      <object>objects\obj_buttong</object>
+      <object>objects\obj_buttony</object>
+      <object>objects\obj_buttonwallb</object>
+      <object>objects\obj_buttonwallr</object>
+      <object>objects\obj_buttonwally</object>
+      <object>objects\obj_buttonwallg</object>
+    </objects>
     <object>objects\obj_victory</object>
     <object>objects\obj_setplantright</object>
     <object>objects\obj_setplantleft</object>
     <object>objects\obj_setplantup</object>
-    <object>objects\obj_setplantdown</object>
     <object>objects\obj_setplantbullet</object>
-    <object>objects\obj_buttonb</object>
-    <object>objects\obj_buttonwallb</object>
+    <object>objects\obj_setplantdown</object>
     <object>objects\obj_small_crab</object>
     <object>objects\obj_cutter</object>
     <object>objects\obj_crusher</object>
@@ -110,11 +119,12 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\beach_1</room>
-    <room>rooms\room_crab</room>
     <room>rooms\beach_2</room>
     <room>rooms\beach_3</room>
     <room>rooms\beach_4</room>
     <room>rooms\beach_5</room>
+    <room>rooms\cave_entrance</room>
+    <room>rooms\cave_transition</room>
     <room>rooms\room_longfall</room>
     <room>rooms\cave_1</room>
     <room>rooms\cave_2</room>
@@ -123,7 +133,7 @@
     <room>rooms\cave_5</room>
     <room>rooms\cave_6</room>
     <room>rooms\cave_7</room>
-    <room>rooms\forest_1</room>
+    <room>rooms\room_crab</room>
     <room>rooms\win_room</room>
   </rooms>
   <help>
