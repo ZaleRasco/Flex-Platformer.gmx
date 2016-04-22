@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_crabsquish</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Buttons">
       <sprite>sprites\spr_buttonb</sprite>
@@ -118,10 +120,9 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\beach_1</room>
-    <room>rooms\room_crab</room>
+    <room>rooms\beach_four</room>
     <room>rooms\beach_2</room>
     <room>rooms\beach_3</room>
-    <room>rooms\beach_4</room>
     <room>rooms\beach_5</room>
     <room>rooms\cave_entrance</room>
     <room>rooms\cave_1</room>
@@ -131,6 +132,7 @@
     <room>rooms\cave_5</room>
     <room>rooms\cave_6</room>
     <room>rooms\cave_7</room>
+    <room>rooms\room_crab</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
