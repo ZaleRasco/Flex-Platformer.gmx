@@ -49,12 +49,11 @@ uprel=false
 movespeed=4
 airspeed=1
 maxspeed=8
-bubblespeed=6
 bubblevspeed=-2
 jumpheight=10
 jumpbuffer=0
 
-bubblespeed=3
+bubblespeed=4
 walkspeed=5
 
 exitjump=false
@@ -637,8 +636,8 @@ if (instance_number(obj_bubble) &gt; 0)
         {
             if (hspeed &gt; -bubblespeed)
             {
-                hspeed -= 0.3
-                bubbleid.hspeed -= 0.3
+                hspeed -= 0.5
+                bubbleid.hspeed -= 0.5
             }
         }
         if (right)
