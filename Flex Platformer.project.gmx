@@ -5,7 +5,9 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
+    <sound>sound\sound1</sound>
     <sound>sound\snd_crabsquish</sound>
+    <sound>sound\sound2</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Buttons">
@@ -58,6 +60,7 @@
     <sprite>sprites\spr_small_crabs</sprite>
     <sprite>sprites\spr_crumble</sprite>
     <sprite>sprites\spr_sponage</sprite>
+    <sprite>sprites\sprite40</sprite>
     <sprite>sprites\spr_sponage_woosh</sprite>
     <sprite>sprites\spr_frog</sprite>
   </sprites>

@@ -719,21 +719,25 @@ if (stuck = false)
         {
             jumping = false
             vspeed = -14
+            audio_play_sound(sound2,10,false)
         }
         if (place_meeting(x, y - 1, obj_bouncy))
         {
             jumping = false
             vspeed = 14
+            audio_play_sound(sound2,10,false)
         }
         if (place_meeting(x + 1, y, obj_bouncy))
         {
             jumping = false
             hspeed = -14
+            audio_play_sound(sound2,10,false)
         }
         if (place_meeting(x - 1, y, obj_bouncy))
         {
             jumping = false
             hspeed = 14
+            audio_play_sound(sound2,10,false)
         }
     }
 
@@ -744,21 +748,26 @@ if (stuck = false)
         {
             jumping = false
             vspeed = -vvspeed * 1.1
+            audio_play_sound(sound2,10,false)
         }
         if (place_meeting(x, y - 1, obj_bouncy))
         {
             jumping = false
             vspeed = -vvspeed * 1.1
+            audio_play_sound(sound2,10,false)
         }
         if (place_meeting(x + 1, y, obj_bouncy))
         {
             jumping = false
             hspeed = -hhspeed * 1.1
+            audio_play_sound(sound2,10,false)
         }
         if (place_meeting(x - 1, y, obj_bouncy))
         {
             jumping = false
             hspeed = + -hhspeed * 1.1
+            audio_play_sound(sound2,10,false)
+            
         }
     }
 }
