@@ -101,7 +101,7 @@ obj_player.x = mouse_x
 obj_player.y = mouse_y
 }
 
-if(keyboard_check_pressed(ord('G')))
+/*if(keyboard_check_pressed(ord('G')))
 {
     if(obj_player.g=0.5)
         {
@@ -198,6 +198,30 @@ hourstring=hours
     <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
+        <id>526</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_font</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>12</kind>
+            <font>-1</font>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -214,8 +238,14 @@ hourstring=hours
             <kind>1</kind>
             <string>///Info Drawn
 
-draw_text(100,50,string(hourstring)+":"+string(minutestring)+":"+string(secondstring)+":"+string(tickstring))
-draw_text(100,25,fps)
+draw_text(50,25,string(hourstring)+":"+string(minutestring)+":"+string(secondstring)+":"+string(tickstring))
+//draw_text(100,25,fps)
+
+if(room=beach_1)
+{
+draw_set_font(font_1)
+draw_text(200,200,'Use left and right arrow to move, space to jump')
+}
 </string>
           </argument>
         </arguments>
