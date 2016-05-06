@@ -65,7 +65,6 @@
     <sprite>sprites\spr_sponage</sprite>
     <sprite>sprites\sprite40</sprite>
     <sprite>sprites\spr_sponage_woosh</sprite>
-    <sprite>sprites\spr_frog</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background_spikes</background>

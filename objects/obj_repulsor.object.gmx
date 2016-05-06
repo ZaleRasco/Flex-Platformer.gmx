@@ -57,6 +57,8 @@ else
 {
 tick=0
 }
+image_yscale += irandom_range(-1,1);
+image_xscale += irandom_range(-1,1);
 </string>
           </argument>
         </arguments>
