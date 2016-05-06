@@ -66,6 +66,12 @@
     <sprite>sprites\sprite40</sprite>
     <sprite>sprites\spr_sponage_woosh</sprite>
     <sprite>sprites\spr_frog</sprite>
+    <sprites name="Menu">
+      <sprite>sprites\spr_menuContinue</sprite>
+      <sprite>sprites\spr_menuNewGame</sprite>
+      <sprite>sprites\spr_menuExit</sprite>
+      <sprite>sprites\spr_menuOptions</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background_spikes</background>
@@ -87,6 +93,14 @@
     <path>paths\path1</path>
     <path>paths\path2</path>
   </paths>
+  <scripts name="scripts">
+    <scripts name="Menu">
+      <script>scripts\scr_menuContinue.gml</script>
+      <script>scripts\scr_menuExit.gml</script>
+      <script>scripts\scr_menuNewGame.gml</script>
+      <script>scripts\scr_menuOptions.gml</script>
+    </scripts>
+  </scripts>
   <fonts name="fonts">
     <font>fonts\font_1</font>
   </fonts>
@@ -130,8 +144,10 @@
     <object>objects\obj_rise</object>
     <object>objects\obj_repulsor</object>
     <object>objects\obj_attractor</object>
+    <object>objects\obj_menuMain</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room_menu</room>
     <room>rooms\beach_1</room>
     <room>rooms\beach_2</room>
     <room>rooms\beach_3</room>
@@ -146,7 +162,6 @@
     <room>rooms\room_win</room>
     <room>rooms\beach_5</room>
     <room>rooms\room_crab</room>
-    <room>rooms\room_menu</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
