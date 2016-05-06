@@ -116,6 +116,8 @@
     <objects name="Special">
       <object>objects\obj_bubble</object>
       <object>objects\obj_bubblecreate</object>
+      <object>objects\obj_attractor</object>
+      <object>objects\obj_repulsor</object>
     </objects>
     <objects name="Control">
       <object>objects\obj_control</object>
@@ -159,6 +161,7 @@
     <room>rooms\cave_5</room>
     <room>rooms\cave_6</room>
     <room>rooms\cave_7</room>
+    <room>rooms\cave_8</room>
     <room>rooms\room_win</room>
     <room>rooms\beach_5</room>
     <room>rooms\room_crab</room>
