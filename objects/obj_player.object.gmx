@@ -739,25 +739,21 @@ if (stuck = false)
         {
             jumping = false
             vspeed = -14
-            audio_play_sound(sound2,10,false)
         }
         if (place_meeting(x, y - 1, obj_bouncy))
         {
             jumping = false
             vspeed = 14
-            audio_play_sound(sound2,10,false)
         }
         if (place_meeting(x + 1, y, obj_bouncy))
         {
             jumping = false
             hspeed = -14
-            audio_play_sound(sound2,10,false)
         }
         if (place_meeting(x - 1, y, obj_bouncy))
         {
             jumping = false
             hspeed = 14
-            audio_play_sound(sound2,10,false)
         }
     }
 
@@ -768,26 +764,21 @@ if (stuck = false)
         {
             jumping = false
             vspeed = -vvspeed * 1.1
-            audio_play_sound(sound2,10,false)
         }
         if (place_meeting(x, y - 1, obj_bouncy))
         {
             jumping = false
             vspeed = -vvspeed * 1.1
-            audio_play_sound(sound2,10,false)
         }
         if (place_meeting(x + 1, y, obj_bouncy))
         {
             jumping = false
             hspeed = -hhspeed * 1.1
-            audio_play_sound(sound2,10,false)
         }
         if (place_meeting(x - 1, y, obj_bouncy))
         {
             jumping = false
             hspeed = + -hhspeed * 1.1
-            audio_play_sound(sound2,10,false)
-            
         }
     }
 }
@@ -850,8 +841,8 @@ for(i=0;i&lt;instance_number(obj_attractor);i++)
     var dis=point_distance(x,y,currentattractor.x,currentattractor.y)
     if(dis&lt;200)
         {
-        aforce=(50/power(dis,0.8))
-        motion_add(point_direction(x,y,currentattractor.x,currentattractor.y),aforce)
+        aforce=(50/power(dis,0.9))
+        motion_add(point_direction(x,y,currentattractor.x,currentattractor.y),aforce/2)
         }
 }
 </string>
