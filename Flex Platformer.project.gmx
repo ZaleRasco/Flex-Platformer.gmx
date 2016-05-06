@@ -41,6 +41,8 @@
     <sprites name="Terrain">
       <sprite>sprites\spr_bouncy</sprite>
       <sprite>sprites\spr_wall</sprite>
+      <sprite>sprites\spr_repulsor</sprite>
+      <sprite>sprites\spr_attractor</sprite>
     </sprites>
     <sprites name="Control">
       <sprite>sprites\spr_control</sprite>
@@ -122,6 +124,7 @@
     <object>objects\obj_crusher</object>
     <object>objects\obj_rise</object>
     <object>objects\obj_repulsor</object>
+    <object>objects\obj_attractor</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\beach_1</room>
@@ -132,7 +135,6 @@
     <room>rooms\cave_1</room>
     <room>rooms\cave_2</room>
     <room>rooms\cave_3</room>
-    <room>rooms\cave_4</room>
     <room>rooms\cave_5</room>
     <room>rooms\cave_6</room>
     <room>rooms\cave_7</room>
