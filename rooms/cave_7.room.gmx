@@ -65,6 +65,8 @@
     <instance objName="obj_buttonwallr" x="896" y="64" name="inst_E5914FA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_buttonwallr" x="896" y="96" name="inst_CAA6923B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bouncy" x="480" y="608" name="inst_23D80215" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bouncy" x="480" y="416" name="inst_C57AF070" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bouncy" x="480" y="224" name="inst_3416E398" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="992" y="128" name="inst_B2D6FDDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="960" y="128" name="inst_0FE2B299" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="928" y="128" name="inst_14991856" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
