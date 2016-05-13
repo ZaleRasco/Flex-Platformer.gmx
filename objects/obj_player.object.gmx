@@ -391,12 +391,12 @@ if ((place_free(x, y + 1)) &amp;&amp; moving = false)
 {
     if (hspeed &gt; 0 /*&amp;&amp;hspeed &gt; 0.5*/)
     {
-        hspeed -= hspeed / 100
+        hspeed -= hspeed / 10
     }
     
     if (hspeed &lt; 0 /*&amp;&amp; hspeed &lt; -0.5*/)
     {
-        hspeed -= hspeed / 100
+        hspeed -= hspeed / 10
     }
 
 }
@@ -550,10 +550,6 @@ if place_meeting(x, y, obj_death)
     death = true
 }
 
-if place_meeting(x, y, obj_setplantbullet)
-{
-    death = true
-}
 </string>
           </argument>
         </arguments>
@@ -811,7 +807,10 @@ for(i=0;i&lt;instance_number(obj_repulsor);i++)
     if(dis&lt;200)
         {
         rforce=-(50/power(dis,0.75))
-        motion_add(point_direction(x,y,currentrepulsor.x,currentrepulsor.y),rforce)
+        if((rforce/2)&lt;-0.5)
+            {
+            motion_add(point_direction(x,y,currentrepulsor.x,currentrepulsor.y),rforce)
+            }
         }
 }
 </string>
@@ -841,8 +840,11 @@ for(i=0;i&lt;instance_number(obj_attractor);i++)
     var dis=point_distance(x,y,currentattractor.x,currentattractor.y)
     if(dis&lt;200)
         {
-        aforce=(50/power(dis,0.9))
-        motion_add(point_direction(x,y,currentattractor.x,currentattractor.y),aforce/2)
+        aforce=(50/power(dis,0.8))
+        if((aforce/2)&gt;0.5)
+            {
+            motion_add(point_direction(x,y,currentattractor.x,currentattractor.y),aforce/2)
+            }
         }
 }
 </string>
