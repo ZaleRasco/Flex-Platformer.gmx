@@ -224,7 +224,7 @@ for (i = 0; i &lt; 2; i += 1){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(50,50,behaviour)
+            <string>/*draw_text(50,50,behaviour)
 draw_text(60,60,hDirection)
 draw_text(70,70,canChangeDir)
 </string>

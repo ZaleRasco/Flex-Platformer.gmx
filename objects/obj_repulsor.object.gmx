@@ -27,8 +27,7 @@
             <kind>1</kind>
             <string>///Init
 tick=0
-image_xscale=2
-image_yscale=2
+
 </string>
           </argument>
         </arguments>
@@ -59,23 +58,7 @@ else
 {
 tick=0
 }
-/*if(image_yscale&gt;=4)
-{
-a=1
-b=0
-}
-if(image_yscale&lt;4)
-{
-a=1
-b=0
-}
-if(image_xscale&lt;4&amp;&amp;image_xscale&gt;1)
-{
 
-}
-
-image_yscale += irandom_range(-a,b);
-image_xscale += irandom_range(-d,e);
 </string>
           </argument>
         </arguments>

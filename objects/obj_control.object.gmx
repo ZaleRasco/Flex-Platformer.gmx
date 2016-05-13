@@ -241,11 +241,6 @@ hourstring=hours
 draw_text(50,25,string(hourstring)+":"+string(minutestring)+":"+string(secondstring)+":"+string(tickstring))
 //draw_text(100,25,fps)
 
-if(room=beach_1)
-{
-draw_set_font(font_1)
-draw_text(200,200,'Use left and right arrow to move, space to jump')
-}
 </string>
           </argument>
         </arguments>
