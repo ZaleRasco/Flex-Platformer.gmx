@@ -165,68 +165,6 @@ if(activated=true)
           </argument>
         </arguments>
       </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Repulsors
-for(i=0;i&lt;instance_number(obj_repulsor);i++)
-{
-    var currentrepulsor=instance_find(obj_repulsor,i)
-    var dis=point_distance(x,y,currentrepulsor.x,currentrepulsor.y)
-    if(dis&lt;200)
-        {
-        var rforce=-(50/power(dis,0.9))
-        motion_add(point_direction(x,y,currentrepulsor.x,currentrepulsor.y),rforce)
-        }
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Attractors
-for(i=0;i&lt;instance_number(obj_attractor);i++)
-{
-    var currentattractor=instance_find(obj_attractor,i)
-    var dis=point_distance(x,y,currentattractor.x,currentattractor.y)
-    if(dis&lt;200)
-        {
-        var aforce=(50/power(dis,0.9))
-        motion_add(point_direction(x,y,currentattractor.x,currentattractor.y),aforce/2)
-        }
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
     </event>
   </events>
   <PhysicsObject>0</PhysicsObject>
