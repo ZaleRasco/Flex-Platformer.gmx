@@ -139,10 +139,10 @@
   <rooms name="rooms">
     <room>rooms\room_menu</room>
     <room>rooms\beach_1</room>
-    <room>rooms\room_crab</room>
     <room>rooms\beach_2</room>
     <room>rooms\beach_3</room>
     <room>rooms\beach_4</room>
+    <room>rooms\beach_5</room>
     <room>rooms\cave_entrance</room>
     <room>rooms\cave_1</room>
     <room>rooms\cave_2</room>
@@ -153,7 +153,7 @@
     <room>rooms\cave_8</room>
     <room>rooms\room_grave</room>
     <room>rooms\room_win</room>
-    <room>rooms\beach_5</room>
+    <room>rooms\room_crab</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
