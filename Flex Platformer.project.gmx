@@ -66,6 +66,7 @@
       <sprite>sprites\spr_menuOptions</sprite>
     </sprites>
     <sprite>sprites\sprite45</sprite>
+    <sprite>sprites\sprite47</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background_spikes</background>
@@ -81,6 +82,7 @@
     <backgrounds name="Forest">
       <background>background\background_forest</background>
     </backgrounds>
+    <background>background\background7</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path0</path>
@@ -139,6 +141,8 @@
   <rooms name="rooms">
     <room>rooms\beach_1</room>
     <room>rooms\room_crab</room>
+    <room>rooms\room_menu</room>
+    <room>rooms\cave_8</room>
     <room>rooms\beach_2</room>
     <room>rooms\beach_3</room>
     <room>rooms\beach_4</room>
@@ -149,10 +153,8 @@
     <room>rooms\cave_5</room>
     <room>rooms\cave_6</room>
     <room>rooms\cave_7</room>
-    <room>rooms\cave_8</room>
     <room>rooms\room_win</room>
     <room>rooms\beach_5</room>
-    <room>rooms\room_menu</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
