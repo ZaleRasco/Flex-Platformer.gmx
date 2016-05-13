@@ -57,6 +57,70 @@ menuSelection = 0
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Crab Control
+//Array of Crab Names and Death State
+crabArray[0,0] = "Jimmy Crab"
+crabArray[0,1] = false
+crabArray[1,0] = "Johnny Crab"
+crabArray[1,1] = false
+crabArray[2,0] = "Crabbey"
+crabArray[2,1] = false
+crabArray[3,0] = "Crabera"
+crabArray[3,1] = false
+crabArray[4,0] = "Crabby McCrabface"
+crabArray[4,1] = false
+crabArray[5,0] = "Crabby Grumpers"
+crabArray[5,1] = false
+crabArray[6,0] = "Crosby Crab"
+crabArray[6,1] = false
+crabArray[7,0] = "Crabaline"
+crabArray[7,1] = false
+crabArray[8,0] = "Crub"
+crabArray[8,1] = false
+crabArray[9,0] = "Crimbo Crab"
+crabArray[9,1] = false
+crabArray[10,0] = "Crabette"
+crabArray[10,1] = false
+crabArray[11,0] = "Horace"
+crabArray[11,1] = false
+crabArray[12,0] = "Larry Crab"
+crabArray[12,1] = false
+crabArray[13,0] = "Murly Crab"
+crabArray[13,1] = false
+crabArray[14,0] = "Coe"
+crabArray[14,1] = false
+crabArray[15,0] = "Robert E. Crab"
+crabArray[15,1] = false
+crabArray[16,0] = "Crusty"
+crabArray[16,1] = false
+crabArray[17,0] = "Crumb"
+crabArray[17,1] = false
+crabArray[18,0] = "Crabs McKenzie"
+crabArray[18,1] = false
+crabArray[19,0] = "Shauna Crabdonald"
+crabArray[19,1] = false
+crabArray[20,0] = "Rangoon"
+crabArray[10, 1] = false
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="3" enumb="0">
       <action>
