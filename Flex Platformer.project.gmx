@@ -141,14 +141,11 @@
     <object>objects\obj_cutter</object>
     <object>objects\obj_crusher</object>
     <object>objects\obj_rise</object>
-    <object>objects\obj_repulsor</object>
-    <object>objects\obj_attractor</object>
     <object>objects\obj_menuMain</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>
     <room>rooms\beach_1</room>
-    <room>rooms\cave_8</room>
     <room>rooms\beach_2</room>
     <room>rooms\beach_3</room>
     <room>rooms\beach_4</room>
@@ -159,6 +156,7 @@
     <room>rooms\cave_5</room>
     <room>rooms\cave_6</room>
     <room>rooms\cave_7</room>
+    <room>rooms\cave_8</room>
     <room>rooms\room_win</room>
     <room>rooms\beach_5</room>
     <room>rooms\room_crab</room>
