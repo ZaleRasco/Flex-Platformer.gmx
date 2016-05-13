@@ -146,8 +146,9 @@
     <object>objects\obj_menuMain</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room_menu</room>
     <room>rooms\beach_1</room>
+    <room>rooms\room_crab</room>
+    <room>rooms\room_menu</room>
     <room>rooms\cave_8</room>
     <room>rooms\beach_2</room>
     <room>rooms\beach_3</room>
@@ -161,7 +162,6 @@
     <room>rooms\cave_7</room>
     <room>rooms\room_win</room>
     <room>rooms\beach_5</room>
-    <room>rooms\room_crab</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
