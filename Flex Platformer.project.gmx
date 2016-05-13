@@ -32,17 +32,17 @@
       <sprite>sprites\spr_spikes</sprite>
       <sprite>sprites\spr_spikesdown</sprite>
       <sprite>sprites\spr_death</sprite>
+      <sprite>sprites\spr_setplant</sprite>
+      <sprite>sprites\spr_setbullet</sprite>
       <sprite>sprites\spr_right_claw</sprite>
       <sprite>sprites\spr_left_claw</sprite>
       <sprite>sprites\spr_crab_body</sprite>
     </sprites>
     <sprites name="Terrain">
       <sprite>sprites\spr_bouncy</sprite>
-      <sprite>sprites\spr_small_crabs</sprite>
-      <sprite>sprites\spr_crab_party</sprite>
-      <sprite>sprites\spr_crab_party_2</sprite>
-      <sprite>sprites\spr_dead_crab</sprite>
       <sprite>sprites\spr_wall</sprite>
+      <sprite>sprites\spr_repulsor</sprite>
+      <sprite>sprites\spr_attractor</sprite>
     </sprites>
     <sprites name="Control">
       <sprite>sprites\spr_control</sprite>
@@ -54,10 +54,9 @@
       <sprite>sprites\spr_bubblepop</sprite>
       <sprite>sprites\spr_bubble</sprite>
       <sprite>sprites\spr_exit</sprite>
-      <sprite>sprites\spr_attractor</sprite>
-      <sprite>sprites\spr_repulsor</sprite>
       <sprite>sprites\spr_victory</sprite>
     </sprites>
+    <sprite>sprites\spr_small_crabs</sprite>
     <sprite>sprites\spr_crumble</sprite>
     <sprite>sprites\spr_sponage</sprite>
     <sprite>sprites\spr_sponage_woosh</sprite>
@@ -68,7 +67,7 @@
       <sprite>sprites\spr_menuExit</sprite>
       <sprite>sprites\spr_menuOptions</sprite>
     </sprites>
-    <sprite>sprites\sprite45</sprite>
+    <sprite>sprites\sprite47</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background_spikes</background>
@@ -85,6 +84,7 @@
       <background>background\background_forest</background>
     </backgrounds>
     <background>background\background7</background>
+    <background>background\back_longfall</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path0</path>
@@ -106,27 +106,33 @@
     <object>objects\obj_player</object>
     <objects name="Obstacles">
       <object>objects\obj_death</object>
+      <object>objects\obj_setplantright</object>
+      <object>objects\obj_setplantleft</object>
+      <object>objects\obj_setplantup</object>
+      <object>objects\obj_setplantdown</object>
+      <object>objects\obj_setplantbullet</object>
       <object>objects\obj_cutter</object>
       <object>objects\obj_crusher</object>
     </objects>
     <objects name="Terrain">
       <object>objects\obj_bouncy</object>
       <object>objects\obj_wall</object>
-      <object>objects\obj_small_crab</object>
     </objects>
     <objects name="Special">
       <object>objects\obj_bubble</object>
       <object>objects\obj_bubblecreate</object>
       <object>objects\obj_attractor</object>
       <object>objects\obj_repulsor</object>
+      <object>objects\obj_small_crab</object>
     </objects>
     <objects name="Control">
       <object>objects\obj_menuMain</object>
       <object>objects\obj_control</object>
       <object>objects\obj_roomstart</object>
+      <object>objects\obj_roomsecretend</object>
       <object>objects\obj_roomend</object>
-      <object>objects\obj_rise</object>
       <object>objects\obj_victory</object>
+      <object>objects\obj_rise</object>
     </objects>
     <objects name="Buttons">
       <object>objects\obj_buttonb</object>
@@ -138,7 +144,6 @@
       <object>objects\obj_buttonwally</object>
       <object>objects\obj_buttonwallg</object>
     </objects>
-    <object>objects\obj_teach</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>
@@ -148,16 +153,19 @@
     <room>rooms\beach_4</room>
     <room>rooms\beach_5</room>
     <room>rooms\cave_entrance</room>
+    <room>rooms\room_thefall</room>
+    <room>rooms\room_endfall</room>
     <room>rooms\cave_1</room>
     <room>rooms\cave_2</room>
     <room>rooms\cave_3</room>
+    <room>rooms\cave_8</room>
     <room>rooms\cave_5</room>
     <room>rooms\cave_6</room>
     <room>rooms\cave_7</room>
-    <room>rooms\cave_8</room>
-    <room>rooms\room_grave</room>
-    <room>rooms\room_win</room>
     <room>rooms\room_crab</room>
+    <room>rooms\room_graveyard</room>
+    <room>rooms\room_win</room>
+    <room>rooms\room_secret</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

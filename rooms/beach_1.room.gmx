@@ -112,7 +112,7 @@
     <instance objName="obj_wall" x="352" y="640" name="inst_815552A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="672" y="608" name="inst_B376AE01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_small_crab" x="224" y="672" name="inst_BD6FA5E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_teach" x="512" y="160" name="inst_AD32AD09" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="512" y="160" name="inst_AD32AD09" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="" x="-240" y="512" w="16" h="16" xo="0" yo="0" id="10000005" name="inst_6E276654" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
