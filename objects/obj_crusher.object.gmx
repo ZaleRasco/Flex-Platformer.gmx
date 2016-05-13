@@ -51,7 +51,7 @@ launched=false
             <kind>1</kind>
             <string>if(y&lt;4780) and (launched = false)
 { 
-obj_player.vspeed-=26
+obj_player.vspeed-=20
 launched = true
 }
 </string>
