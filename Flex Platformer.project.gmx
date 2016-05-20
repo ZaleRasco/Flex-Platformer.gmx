@@ -57,8 +57,12 @@
       <sprite>sprites\spr_bubble</sprite>
       <sprite>sprites\spr_exit</sprite>
       <sprite>sprites\spr_victory</sprite>
+      <sprite>sprites\spr_crab_party</sprite>
+      <sprite>sprites\spr_crab_party_2</sprite>
+      <sprite>sprites\spr_dead_crab</sprite>
     </sprites>
     <sprite>sprites\spr_small_crabs</sprite>
+    <sprite>sprites\spr_crab_idle</sprite>
     <sprite>sprites\spr_crumble</sprite>
     <sprite>sprites\spr_sponage</sprite>
     <sprite>sprites\spr_sponage_woosh</sprite>
@@ -69,7 +73,6 @@
       <sprite>sprites\spr_menuExit</sprite>
       <sprite>sprites\spr_menuOptions</sprite>
     </sprites>
-    <sprite>sprites\sprite47</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background_spikes</background>
@@ -113,6 +116,7 @@
       <object>objects\obj_setplantbullet</object>
       <object>objects\obj_cutter</object>
       <object>objects\obj_crusher</object>
+      <object>objects\obj_crabhead</object>
     </objects>
     <objects name="Terrain">
       <object>objects\obj_bouncy</object>
@@ -145,10 +149,12 @@
       <object>objects\obj_buttonwally</object>
       <object>objects\obj_buttonwallg</object>
     </objects>
+    <object>objects\player_particles</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>
     <room>rooms\beach_1</room>
+    <room>rooms\room_crab</room>
     <room>rooms\beach_2</room>
     <room>rooms\beach_3</room>
     <room>rooms\beach_4</room>
@@ -159,11 +165,10 @@
     <room>rooms\cave_1</room>
     <room>rooms\cave_2</room>
     <room>rooms\cave_3</room>
-    <room>rooms\cave_8</room>
+    <room>rooms\cave_4</room>
     <room>rooms\cave_5</room>
     <room>rooms\cave_6</room>
     <room>rooms\cave_7</room>
-    <room>rooms\room_crab</room>
     <room>rooms\room_win</room>
     <room>rooms\room_graveyard</room>
     <room>rooms\room_secret</room>
