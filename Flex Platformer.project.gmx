@@ -72,7 +72,6 @@
       <sprite>sprites\spr_menuExit</sprite>
       <sprite>sprites\spr_menuOptions</sprite>
     </sprites>
-    <sprite>sprites\sprite47</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background_spikes</background>
