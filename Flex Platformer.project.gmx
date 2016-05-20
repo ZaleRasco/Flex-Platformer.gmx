@@ -127,6 +127,7 @@
       <object>objects\obj_roomend</object>
       <object>objects\obj_rise</object>
       <object>objects\obj_victory</object>
+      <object>objects\obj_crabcontrol</object>
     </objects>
     <objects name="Buttons">
       <object>objects\obj_buttonb</object>
