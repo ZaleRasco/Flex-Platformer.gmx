@@ -217,8 +217,8 @@ if (up){
 //Calls scripts for each menu option when space or enter is pressed.
 if (select){
     switch (menuSelection){
-        case 0: scr_menuContinue(); break;
-        case 1: scr_menuNewGame(); break;
+        case 0: scr_menuNewGame(); break;
+        case 1: scr_menuContinue(); break;
         case 2: scr_menuOptions(); break;
         case 3: scr_menuExit(); break;
     }

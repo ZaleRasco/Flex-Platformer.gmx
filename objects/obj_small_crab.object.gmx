@@ -112,7 +112,7 @@ for (i = 0; i &lt; 2; i += 1){
           <argument>
             <kind>1</kind>
             <string>///Death
-if (place_meeting(x, y, obj_player) &amp;&amp; (isDead = false)){
+if (place_meeting(x, y, obj_player) &amp;&amp; (isDead = false) &amp;&amp; (obj_player.crabform=false)){
     isDead = true
     global.crabDeaths += 1
 }

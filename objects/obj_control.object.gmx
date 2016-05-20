@@ -113,7 +113,7 @@ obj_player.x = mouse_x
 obj_player.y = mouse_y
 }
 
-/*if(keyboard_check_pressed(ord('G')))
+if(keyboard_check_pressed(ord('G')))
 {
     if(obj_player.g=0.5)
         {
@@ -123,6 +123,18 @@ obj_player.y = mouse_y
         {
         obj_player.g=0.5
         }
+}
+
+if(keyboard_check_pressed(ord('C')))
+{
+    if(obj_player.crabform=false)
+    {
+    obj_player.crabform=true
+    }
+    else
+    {
+    obj_player.crabform=false
+    }
 }
 </string>
           </argument>
@@ -256,7 +268,8 @@ hourstring=TimerHours
             <string>///Info Drawn
 
 draw_text(50,25,string(hourstring)+":"+string(minutestring)+":"+string(secondstring)+":"+string(tickstring))
-//draw_text(100,25,fps)
+draw_text(100,50,fps)
+draw_text(100,75,obj_player.crabform)
 
 </string>
           </argument>

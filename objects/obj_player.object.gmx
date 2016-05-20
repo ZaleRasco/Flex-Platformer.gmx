@@ -29,6 +29,7 @@
 g=0.5
 death=false
 global.force=false
+crabform=false
 
 //Movement
 moving=false
@@ -874,7 +875,6 @@ for(i=0;i&lt;instance_number(obj_attractor);i++)
           <argument>
             <kind>1</kind>
             <string>draw_self()
-draw_text(100,100,global.force)
 </string>
           </argument>
         </arguments>
