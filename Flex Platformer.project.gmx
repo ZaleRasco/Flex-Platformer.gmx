@@ -34,7 +34,7 @@
       <sprite>sprites\spr_death</sprite>
       <sprite>sprites\spr_setplant</sprite>
       <sprite>sprites\spr_setbullet</sprite>
-      <sprite>sprites\spr_right_claw</sprite>
+      <sprite>sprites\spr_crab_body</sprite>
       <sprite>sprites\spr_left_claw</sprite>
       <sprite>sprites\spr_crab_body</sprite>
     </sprites>
