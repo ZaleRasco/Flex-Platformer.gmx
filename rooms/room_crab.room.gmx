@@ -830,6 +830,7 @@
     <instance objName="obj_wall" x="32" y="2176" name="inst_A0E713B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="32" y="2144" name="inst_B3957FDC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="32" y="2112" name="inst_C3B6FE7C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_crabhead" x="320" y="5216" name="inst_2CA748D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background_spikes" x="32" y="3968" w="16" h="16" xo="18" yo="18" id="10001382" name="inst_E4D085D6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

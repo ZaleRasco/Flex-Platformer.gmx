@@ -700,7 +700,7 @@ if (instance_number(obj_bubble) &gt; 0)
     {
         if (down = true)
         {
-            bubbleid.vspeed=-1
+            bubbleid.vspeed=-0.75
         }
         if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up))
         {

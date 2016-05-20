@@ -63,6 +63,11 @@ ini_close();
             <string>///Spawn Player
 
 instance_create(x+16,y+16,obj_player)
+if(room=room_endfall)
+{
+obj_player.vspeed=32
+}
+
 </string>
           </argument>
         </arguments>
