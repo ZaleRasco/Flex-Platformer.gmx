@@ -73,6 +73,8 @@
       <sprite>sprites\spr_menuExit</sprite>
       <sprite>sprites\spr_menuOptions</sprite>
     </sprites>
+    <sprite>sprites\sprite53</sprite>
+    <sprite>sprites\rubble</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background_spikes</background>
