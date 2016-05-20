@@ -604,6 +604,7 @@ if (rightrel)
 {
     sprite_index = spr_playeridleright
 }
+/*
 if (col1 &lt; 0) {col1 = 0};
 if (col1 &gt;256) {col1 = 256};
 if (col2 &lt; 0) {col2 = 0};
