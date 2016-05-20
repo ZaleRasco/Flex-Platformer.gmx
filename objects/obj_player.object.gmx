@@ -622,7 +622,7 @@ col3 += irandom_range(-13,13);
 col4 += irandom_range(-13,13);
 col5 += irandom_range(-13,13);
 col6 += irandom_range(-13,13);
-bab = instance_create(x+irandom_range(-10,10),y+irandom_range(-10,10),player_particles);
+bab = instance_create(x+irandom_range(-5,5),y+irandom_range(-5,5),player_particles);
 with (bab) {
 col1 = obj_player.col1;
 col2 = obj_player.col2;
