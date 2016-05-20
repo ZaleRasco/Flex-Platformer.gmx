@@ -144,6 +144,7 @@
       <object>objects\obj_buttonwally</object>
       <object>objects\obj_buttonwallg</object>
     </objects>
+    <object>objects\player_particles</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>
