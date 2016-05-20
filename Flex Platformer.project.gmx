@@ -49,6 +49,7 @@
       <sprite>sprites\spr_start</sprite>
       <sprite>sprites\spr_end</sprite>
       <sprite>sprites\spr_rise</sprite>
+      <sprite>sprites\spr_dialogue_box</sprite>
     </sprites>
     <sprites name="Special">
       <sprite>sprites\spr_bubblecreate</sprite>
@@ -99,7 +100,7 @@
     </scripts>
   </scripts>
   <fonts name="fonts">
-    <font>fonts\font_1</font>
+    <font>fonts\crab_text</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>

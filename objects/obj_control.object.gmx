@@ -248,7 +248,7 @@ hourstring=TimerHours
             <string>///Info Drawn
 
 draw_text(50,25,string(hourstring)+":"+string(minutestring)+":"+string(secondstring)+":"+string(tickstring))
-draw_text(100,50,fps)
+/*draw_text(100,50,fps)
 draw_text(100,75,obj_player.crabform)
 
 </string>
@@ -274,6 +274,39 @@ draw_text(100,75,obj_player.crabform)
           <argument>
             <kind>1</kind>
             <string>///No Draw Self
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Testing
+//Array of things to draw
+testdraw[0] = obj_crabcontrol.crabarray[0,0]
+testdraw[1] = obj_player.crabform
+testdraw[2] = fps
+testdraw[3] = obj_player.death
+testdraw[4] = obj_player.y
+
+
+//Draw variables
+for (i = 0; i &lt; array_length_1d(testdraw); i++){
+    draw_text(10, (10 + (20 * i)), testdraw[i])
+}
 </string>
           </argument>
         </arguments>

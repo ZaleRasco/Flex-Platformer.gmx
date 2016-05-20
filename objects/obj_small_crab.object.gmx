@@ -3,7 +3,7 @@
   <spriteName>spr_small_crabs</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-100</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -35,6 +35,10 @@ behaviour = "wait"
 canChangeDir = true
 oldBehaviour = "wait"
 behaviourChange = 0
+
+//Dialogue
+speaking = false
+stopMoving = false
 </string>
           </argument>
         </arguments>
@@ -65,36 +69,6 @@ oldBehaviour = behaviour
       </action>
     </event>
     <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Movement
-for (i = 0; i &lt; 2; i += 1){
-    if (place_free((x + hDirection), y) &amp; !(place_free((x + (12 * hDirection)), (y+1)))){
-        x += hDirection
-    }else{
-        hDirection = (hDirection * -1)
-    }
-}
-
-    
-</string>
-          </argument>
-        </arguments>
-      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -187,6 +161,106 @@ if (isDead = false){
     }
 }else{
     hDirection = 0
+    depth = 100
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Movement
+if (!speaking and !stopMoving){
+    for (i = 0; i &lt; 2; i += 1){
+        if (place_free((x + hDirection), y) &amp; !(place_free((x + (12 * hDirection)), (y+1)))){
+            x += hDirection;
+        }else{
+            hDirection = (hDirection * -1);
+        }
+    }
+}    
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Dialogue
+//Makes the crab stop when you get within two tiles of it in crab form
+if ((point_distance(x, y, obj_player.x, obj_player.y) &lt; 32) and (obj_player.crabform)){
+    stopMoving = true;
+}
+
+//Controls the "speaking" variable
+if (obj_player.crabform and obj_player.down and (point_distance(x, y, obj_player.x, obj_player.y) &lt; 32)){
+    speaking = true;
+}
+
+if ((point_distance(x, y, obj_player.x, obj_player.y)) &gt; 64){
+    speaking = false;
+    stopMoving = false;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Speaking
+//Draws the name of the crab
+if (stopMoving and !speaking){
+    draw_text(x, y - 32, obj_crabcontrol.crabarray[crabnumber, 0]);
+}
+
+if (speaking){
+    draw_set_color(c_white);
+    draw_set_font(crab_text);
+    draw_sprite(spr_dialogue_box,0,0,0);
+    draw_text_ext(172,9,obj_crabcontrol.crabarray[crabnumber, 2],3,844);
 }
 </string>
           </argument>
@@ -207,29 +281,6 @@ if (isDead = false){
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/*draw_text(50,50,behaviour)
-draw_text(60,60,hDirection)
-draw_text(70,70,canChangeDir)
-</string>
-          </argument>
-        </arguments>
       </action>
     </event>
   </events>
