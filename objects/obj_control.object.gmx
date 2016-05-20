@@ -301,6 +301,7 @@ testdraw[1] = obj_player.crabform
 testdraw[2] = fps
 testdraw[3] = obj_player.death
 testdraw[4] = obj_player.y
+testdraw[5] = obj_player.x
 
 
 //Draw variables
