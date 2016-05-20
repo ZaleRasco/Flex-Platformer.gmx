@@ -48,6 +48,7 @@
       <sprite>sprites\spr_control</sprite>
       <sprite>sprites\spr_start</sprite>
       <sprite>sprites\spr_end</sprite>
+      <sprite>sprites\spr_rise</sprite>
     </sprites>
     <sprites name="Special">
       <sprite>sprites\spr_bubblecreate</sprite>
@@ -68,7 +69,6 @@
       <sprite>sprites\spr_menuOptions</sprite>
     </sprites>
     <sprite>sprites\sprite47</sprite>
-
   </sprites>
   <backgrounds name="background">
     <background>background\background_spikes</background>
@@ -77,14 +77,12 @@
       <background>background\background_beach</background>
     </backgrounds>
     <backgrounds name="Cave">
-      <background>background\tileset_cave</background>
       <background>background\background_cave</background>
       <background>background\back_neatth</background>
     </backgrounds>
     <backgrounds name="Forest">
       <background>background\background_forest</background>
     </backgrounds>
-    <background>background\background7</background>
     <background>background\back_longfall</background>
   </backgrounds>
   <paths name="paths">
@@ -165,8 +163,8 @@
     <room>rooms\cave_6</room>
     <room>rooms\cave_7</room>
     <room>rooms\room_crab</room>
-    <room>rooms\room_graveyard</room>
     <room>rooms\room_win</room>
+    <room>rooms\room_graveyard</room>
     <room>rooms\room_secret</room>
   </rooms>
   <help>
