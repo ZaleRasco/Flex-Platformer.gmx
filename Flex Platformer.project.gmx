@@ -58,6 +58,7 @@
       <sprite>sprites\spr_victory</sprite>
     </sprites>
     <sprite>sprites\spr_small_crabs</sprite>
+    <sprite>sprites\spr_crab_idle</sprite>
     <sprite>sprites\spr_crumble</sprite>
     <sprite>sprites\spr_sponage</sprite>
     <sprite>sprites\spr_sponage_woosh</sprite>
