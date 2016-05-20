@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>-1</persistent>
+  <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -25,17 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(room=beach_1)
-{
-tick=0
-seconds=0
-minutes=0
-hours=0
-}
-
-secondstring=noone
-minutestring=noone
-hourstring=noone
+            <string>/*secondstring="0"
+minutestring="0"
+hourstring="0"
 </string>
           </argument>
         </arguments>
@@ -134,61 +126,66 @@ obj_player.y = mouse_y
             <kind>1</kind>
             <string>///Timer
 
-tick+=10/6
+globalvar TimerTick;
+globalvar TimerSeconds;
+globalvar TimerMinutes;
+globalvar TimerHours;
 
-if(tick&gt;=100)
+TimerTick += 10/6
+
+if(TimerTick&gt;=100)
 {
-tick=0
-seconds++
+TimerTick=0
+TimerSeconds++
 }
 
-if(seconds&gt;+60)
+if(TimerSeconds&gt;+60)
 {
-seconds=0
-minutes++
+TimerSeconds=0
+TimerMinutes++
 }
 
-if(minutes&gt;=60)
+if(TimerMinutes&gt;=60)
 {
-minutes=0
-hours++
+TimerMinutes=0
+TimerHours++
 }
 
-if(tick&lt;10)
+if(TimerTick&lt;10)
 {
-tickstring=string_insert("0",string(round(tick)),0)
+tickstring=string_insert("0",string(round(TimerTick)),0)
 }
 
 else
 {
-tickstring=round(tick)
+tickstring=round(TimerTick)
 }
 
-if(seconds&lt;10)
+if(TimerSeconds&lt;10)
 {
-secondstring=string_insert("0",string(seconds),0)
+secondstring=string_insert("0",string(TimerSeconds),0)
 }
 else
 {
-secondstring=seconds
+secondstring=TimerSeconds
 }
 
-if(minutes&lt;10)
+if(TimerMinutes&lt;10)
 {
-minutestring=string_insert("0",string(minutes),0)
+minutestring=string_insert("0",string(TimerMinutes),0)
 }
 else
 {
-minutestring=minutes
+minutestring=TimerMinutes
 }
 
-if(hours&lt;10)
+if(TimerHours&lt;10)
 {
-hourstring=string_insert("0",string(hours),0)
+hourstring=string_insert("0",string(TimerHours),0)
 }
 else
 {
-hourstring=hours
+hourstring=TimerHours
 }
 </string>
           </argument>
