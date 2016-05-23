@@ -470,7 +470,7 @@ else if ((jump) &amp;&amp; (place_free(x, y + 1)))
 }
 if (jumpbuffer &gt; 0)
 {
-    if ((!place_free(x, y + 1)) &amp;&amp; (place_free(x, y - 1)))
+    if ((!place_free(x, y + 1)||place_free(xprevious,y + 1)) &amp;&amp; (place_free(x, y - 1)))
     {
         jumping = true
         vspeed = -jumpheight

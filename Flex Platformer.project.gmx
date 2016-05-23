@@ -59,13 +59,10 @@
       <sprite>sprites\spr_victory</sprite>
       <sprite>sprites\spr_crab_party</sprite>
       <sprite>sprites\spr_crab_party_2</sprite>
+      <sprite>sprites\spr_crab_idle</sprite>
+      <sprite>sprites\spr_crab_move</sprite>
       <sprite>sprites\spr_dead_crab</sprite>
     </sprites>
-    <sprite>sprites\spr_small_crabs</sprite>
-    <sprite>sprites\spr_crab_idle</sprite>
-    <sprite>sprites\spr_crumble</sprite>
-    <sprite>sprites\spr_sponage</sprite>
-    <sprite>sprites\spr_sponage_woosh</sprite>
     <sprite>sprites\spr_frog</sprite>
     <sprites name="Menu">
       <sprite>sprites\spr_menuContinue</sprite>
@@ -154,7 +151,6 @@
   <rooms name="rooms">
     <room>rooms\room_menu</room>
     <room>rooms\beach_1</room>
-    <room>rooms\room_crab</room>
     <room>rooms\beach_2</room>
     <room>rooms\beach_3</room>
     <room>rooms\beach_4</room>
@@ -169,6 +165,7 @@
     <room>rooms\cave_5</room>
     <room>rooms\cave_6</room>
     <room>rooms\cave_7</room>
+    <room>rooms\room_crab</room>
     <room>rooms\room_win</room>
     <room>rooms\room_graveyard</room>
     <room>rooms\room_secret</room>
