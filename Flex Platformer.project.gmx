@@ -108,6 +108,7 @@
       <script>scripts\scr_menuOptions.gml</script>
     </scripts>
     <script>scripts\scr_wallbreak.gml</script>
+    <script>scripts\scr_sparkle.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\crab_text</font>
@@ -162,8 +163,8 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>
-    <room>rooms\beach_1</room>
     <room>rooms\room_crab</room>
+    <room>rooms\beach_1</room>
     <room>rooms\beach_2</room>
     <room>rooms\beach_3</room>
     <room>rooms\beach_4</room>

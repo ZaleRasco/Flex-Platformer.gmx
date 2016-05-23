@@ -104,18 +104,6 @@ if(keyboard_check_pressed(ord('G')))
         obj_player.g=0.5
         }
 }
-
-if(keyboard_check_pressed(ord('C')))
-{
-    if(obj_player.crabform=false)
-    {
-    obj_player.crabform=true
-    }
-    else
-    {
-    obj_player.crabform=false
-    }
-}
 </string>
           </argument>
         </arguments>
