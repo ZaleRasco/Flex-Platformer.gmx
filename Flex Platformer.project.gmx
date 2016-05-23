@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sound0</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Buttons">
       <sprite>sprites\spr_buttonb</sprite>
@@ -78,6 +80,8 @@
     </sprites>
     <sprite>sprites\sprite53</sprite>
     <sprite>sprites\rubble</sprite>
+    <sprite>sprites\frog_small</sprite>
+    <sprite>sprites\lil_fish</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background_spikes</background>
@@ -163,7 +167,6 @@
   <rooms name="rooms">
     <room>rooms\room_menu</room>
     <room>rooms\beach_1</room>
-    <room>rooms\room_crab</room>
     <room>rooms\beach_2</room>
     <room>rooms\beach_3</room>
     <room>rooms\beach_4</room>
@@ -178,6 +181,7 @@
     <room>rooms\cave_5</room>
     <room>rooms\cave_6</room>
     <room>rooms\cave_7</room>
+    <room>rooms\room_crab</room>
     <room>rooms\room_win</room>
     <room>rooms\room_graveyard</room>
     <room>rooms\room_secret</room>
