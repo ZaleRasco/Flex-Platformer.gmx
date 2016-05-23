@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sound0</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Buttons">
       <sprite>sprites\spr_buttonb</sprite>
@@ -70,6 +72,13 @@
       <sprite>sprites\spr_menuExit</sprite>
       <sprite>sprites\spr_menuOptions</sprite>
     </sprites>
+    <sprites name="Crab Icons">
+      <sprite>sprites\spr_crab_icon_beach</sprite>
+    </sprites>
+    <sprite>sprites\sprite53</sprite>
+    <sprite>sprites\rubble</sprite>
+    <sprite>sprites\frog_small</sprite>
+    <sprite>sprites\lil_fish</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background_spikes</background>
@@ -85,6 +94,7 @@
       <background>background\background_forest</background>
     </backgrounds>
     <background>background\back_longfall</background>
+    <background>background\enubackground</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path0</path>
@@ -98,6 +108,7 @@
       <script>scripts\scr_menuNewGame.gml</script>
       <script>scripts\scr_menuOptions.gml</script>
     </scripts>
+    <script>scripts\scr_wallbreak.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\crab_text</font>
@@ -118,6 +129,7 @@
     <objects name="Terrain">
       <object>objects\obj_bouncy</object>
       <object>objects\obj_wall</object>
+      <object>objects\obj_crumblewall</object>
     </objects>
     <objects name="Special">
       <object>objects\obj_bubble</object>
@@ -125,6 +137,7 @@
       <object>objects\obj_attractor</object>
       <object>objects\obj_repulsor</object>
       <object>objects\obj_small_crab</object>
+      <object>objects\obj_rubble</object>
     </objects>
     <objects name="Control">
       <object>objects\obj_menuMain</object>
