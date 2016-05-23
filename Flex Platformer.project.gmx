@@ -76,6 +76,8 @@
     <sprites name="Crab Icons">
       <sprite>sprites\spr_crab_icon_beach</sprite>
     </sprites>
+    <sprite>sprites\sprite53</sprite>
+    <sprite>sprites\rubble</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background_spikes</background>
@@ -91,6 +93,7 @@
       <background>background\background_forest</background>
     </backgrounds>
     <background>background\back_longfall</background>
+    <background>background\enubackground</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path0</path>
