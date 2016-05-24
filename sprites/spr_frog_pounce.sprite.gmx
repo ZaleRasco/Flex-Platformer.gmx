@@ -80,5 +80,8 @@
     <frame index="57">images\spr_frog_pounce_57.png</frame>
     <frame index="58">images\spr_frog_pounce_58.png</frame>
     <frame index="59">images\spr_frog_pounce_59.png</frame>
+    <frame index="60">images\spr_frog_pounce_60.png</frame>
+    <frame index="61">images\spr_frog_pounce_61.png</frame>
+    <frame index="62">images\spr_frog_pounce_62.png</frame>
   </frames>
 </sprite>

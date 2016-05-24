@@ -37,8 +37,9 @@
       <sprite>sprites\spr_right_claw</sprite>
       <sprite>sprites\spr_left_claw</sprite>
       <sprite>sprites\spr_crab_body</sprite>
-      <sprite>sprites\spr_frog</sprite>
+      <sprite>sprites\spr_frog_idle</sprite>
       <sprite>sprites\spr_frog_pounce</sprite>
+      <sprite>sprites\spr_frog_tongue_attack</sprite>
     </sprites>
     <sprites name="Terrain">
       <sprite>sprites\spr_bouncy</sprite>
