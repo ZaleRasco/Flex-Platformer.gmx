@@ -40,6 +40,8 @@
       <sprite>sprites\spr_frog_idle</sprite>
       <sprite>sprites\spr_frog_pounce</sprite>
       <sprite>sprites\spr_frog_tongue_attack</sprite>
+      <sprite>sprites\spr_frog_dig</sprite>
+      <sprite>sprites\spr_frog_jump</sprite>
     </sprites>
     <sprites name="Terrain">
       <sprite>sprites\spr_bouncy</sprite>
