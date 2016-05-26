@@ -38,6 +38,7 @@
       <sprite>sprites\spr_left_claw</sprite>
       <sprite>sprites\spr_crab_body</sprite>
       <sprite>sprites\spr_frog_idle</sprite>
+      <sprite>sprites\spr_frog_dirt_swim</sprite>
       <sprite>sprites\spr_frog_pounce</sprite>
       <sprite>sprites\spr_frog_tongue_attack</sprite>
       <sprite>sprites\spr_frog_dig</sprite>
@@ -77,6 +78,7 @@
     <sprites name="Crab Icons">
       <sprite>sprites\sprite57</sprite>
     </sprites>
+    <sprite>sprites\frog</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background_spikes</background>
@@ -106,6 +108,14 @@
       <script>scripts\scr_menuNewGame.gml</script>
       <script>scripts\scr_menuOptions.gml</script>
     </scripts>
+    <scripts name="frog states">
+      <script>scripts\scr_frogidlestate.gml</script>
+      <script>scripts\scr_frogjumpstate.gml</script>
+      <script>scripts\scr_frogtonguestate.gml</script>
+      <script>scripts\scr_frogpouncestate.gml</script>
+      <script>scripts\scr_frogdigstate.gml</script>
+      <script>scripts\scr_frogdirtstate.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\crab_text</font>
@@ -122,6 +132,7 @@
       <object>objects\obj_cutter</object>
       <object>objects\obj_crusher</object>
       <object>objects\obj_crabhead</object>
+      <object>objects\FROG_BOSS</object>
     </objects>
     <objects name="Terrain">
       <object>objects\obj_bouncy</object>
