@@ -93,7 +93,7 @@ if size &gt;= 10 {instance_destroy()}
           <argument>
             <kind>1</kind>
             <string>draw_set_alpha(0.5);
-array[irandom_range(0,7)];
+//array[irandom_range(0,7)];
 draw_set_alpha(1);
 </string>
           </argument>

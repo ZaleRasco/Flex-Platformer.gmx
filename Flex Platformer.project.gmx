@@ -68,6 +68,7 @@
       <sprite>sprites\spr_crab_idle</sprite>
       <sprite>sprites\spr_crab_move</sprite>
       <sprite>sprites\spr_dead_crab</sprite>
+      <sprite>sprites\frog</sprite>
     </sprites>
     <sprites name="Menu">
       <sprite>sprites\spr_menuContinue</sprite>
@@ -78,7 +79,7 @@
     <sprites name="Crab Icons">
       <sprite>sprites\sprite57</sprite>
     </sprites>
-    <sprite>sprites\frog</sprite>
+    <sprite>sprites\gravestones</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background_spikes</background>
