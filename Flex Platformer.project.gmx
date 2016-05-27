@@ -80,6 +80,7 @@
       <sprite>sprites\sprite57</sprite>
     </sprites>
     <sprite>sprites\gravestones</sprite>
+    <sprite>sprites\sprite58</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background_spikes</background>
