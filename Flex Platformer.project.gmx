@@ -77,5 +77,124 @@
     <sprites name="Crab Icons">
       <sprite>sprites\spr_crab_icon_beach</sprite>
     </sprites>
+    <sprite>sprites\gravestones</sprite>
+    <sprite>sprites\sprite58</sprite>
   </sprites>
+  <backgrounds name="background">
+    <background>background\background_spikes</background>
+    <backgrounds name="Beach">
+      <background>background\tileset_beach</background>
+      <background>background\background_beach</background>
+    </backgrounds>
+    <backgrounds name="Cave">
+      <background>background\background_cave</background>
+      <background>background\back_neatth</background>
+    </backgrounds>
+    <backgrounds name="Forest">
+      <background>background\background_forest</background>
+    </backgrounds>
+    <background>background\back_longfall</background>
+    <background>background\enubackground</background>
+  </backgrounds>
+  <paths name="paths">
+    <path>paths\path0</path>
+    <path>paths\path1</path>
+    <path>paths\path2</path>
+  </paths>
+  <scripts name="scripts">
+    <scripts name="Menu">
+      <script>scripts\scr_menuContinue.gml</script>
+      <script>scripts\scr_menuExit.gml</script>
+      <script>scripts\scr_menuNewGame.gml</script>
+      <script>scripts\scr_menuOptions.gml</script>
+    </scripts>
+    <scripts name="frog states">
+      <script>scripts\scr_frogidlestate.gml</script>
+      <script>scripts\scr_frogjumpstate.gml</script>
+      <script>scripts\scr_frogtonguestate.gml</script>
+      <script>scripts\scr_frogpouncestate.gml</script>
+      <script>scripts\scr_frogdigstate.gml</script>
+      <script>scripts\scr_frogdirtstate.gml</script>
+    </scripts>
+  </scripts>
+  <fonts name="fonts">
+    <font>fonts\crab_text</font>
+  </fonts>
+  <objects name="objects">
+    <object>objects\obj_player</object>
+    <objects name="Obstacles">
+      <object>objects\obj_death</object>
+      <object>objects\obj_setplantright</object>
+      <object>objects\obj_setplantleft</object>
+      <object>objects\obj_setplantup</object>
+      <object>objects\obj_setplantdown</object>
+      <object>objects\obj_setplantbullet</object>
+      <object>objects\obj_cutter</object>
+      <object>objects\obj_crusher</object>
+      <object>objects\obj_crabhead</object>
+      <object>objects\FROG_BOSS</object>
+    </objects>
+    <objects name="Terrain">
+      <object>objects\obj_bouncy</object>
+      <object>objects\obj_wall</object>
+    </objects>
+    <objects name="Special">
+      <object>objects\obj_bubble</object>
+      <object>objects\obj_bubblecreate</object>
+      <object>objects\obj_attractor</object>
+      <object>objects\obj_repulsor</object>
+      <object>objects\obj_small_crab</object>
+    </objects>
+    <objects name="Control">
+      <object>objects\obj_menuMain</object>
+      <object>objects\obj_control</object>
+      <object>objects\obj_roomstart</object>
+      <object>objects\obj_roomsecretend</object>
+      <object>objects\obj_roomend</object>
+      <object>objects\obj_victory</object>
+      <object>objects\obj_crabcontrol</object>
+      <object>objects\obj_rise</object>
+    </objects>
+    <objects name="Buttons">
+      <object>objects\obj_buttonb</object>
+      <object>objects\obj_buttonr</object>
+      <object>objects\obj_buttong</object>
+      <object>objects\obj_buttony</object>
+      <object>objects\obj_buttonwallb</object>
+      <object>objects\obj_buttonwallr</object>
+      <object>objects\obj_buttonwally</object>
+      <object>objects\obj_buttonwallg</object>
+    </objects>
+    <object>objects\player_particles</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\room_menu</room>
+    <room>rooms\beach_1</room>
+    <room>rooms\beach_2</room>
+    <room>rooms\beach_3</room>
+    <room>rooms\beach_4</room>
+    <room>rooms\beach_5</room>
+    <room>rooms\cave_entrance</room>
+    <room>rooms\room_thefall</room>
+    <room>rooms\room_endfall</room>
+    <room>rooms\cave_1</room>
+    <room>rooms\cave_2</room>
+    <room>rooms\cave_3</room>
+    <room>rooms\cave_4</room>
+    <room>rooms\cave_5</room>
+    <room>rooms\cave_6</room>
+    <room>rooms\cave_7</room>
+    <room>rooms\room_crab</room>
+    <room>rooms\room_win</room>
+    <room>rooms\room_graveyard</room>
+    <room>rooms\room_secret</room>
+  </rooms>
+  <help>
+    <rtf>help.rtf</rtf>
+  </help>
+  <TutorialState>
+    <IsTutorial>0</IsTutorial>
+    <TutorialName></TutorialName>
+    <TutorialPage>0</TutorialPage>
+  </TutorialState>
 </assets>
