@@ -123,10 +123,10 @@ if (isDead = false){
         sprite_index=spr_crab_idle
     } else if ((behaviourChange &gt; 0) and (behaviourChange &lt;= 3)) {
         behaviour = "turnAround"
-        sprite_index=spr_crab_move
+        sprite_index=spr_crab_moving
     }else if (behaviourChange &gt;= 4) {
         behaviour = "move"
-        sprite_index=spr_crab_move
+        sprite_index=spr_crab_moving
     } else {
         //Waiting! DON'T MOVE!
     }

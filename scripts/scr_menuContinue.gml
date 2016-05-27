@@ -12,9 +12,11 @@ TimerTick=ini_read_real("Save","tick",0)
 TimerSeconds=ini_read_real("Save","seconds",0)
 TimerMinutes=ini_read_real("Save","minutes",0)
 TimerHours=ini_read_real("Save","hours",0)
+global.crabform=ini_read_real("Save","crabform",false)
 
 
 
 
 ini_close(); 
+
 room_goto(Saveroom)

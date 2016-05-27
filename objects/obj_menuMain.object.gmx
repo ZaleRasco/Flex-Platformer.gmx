@@ -46,7 +46,7 @@ quitTimer = 0
 //-------------------------------*/
 menuOption[0] = spr_menuNewGame
 menuOption[1] = spr_menuContinue
-menuOption[2] = spr_menuOptions
+menuOption[2] = spr_menuExit
 menuOption[3] = spr_menuExit
 numberOfOptions = array_length_1d(menuOption) - 1
 
