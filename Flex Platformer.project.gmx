@@ -74,9 +74,7 @@
       <sprite>sprites\spr_menuExit</sprite>
       <sprite>sprites\spr_menuOptions</sprite>
     </sprites>
-    <sprites name="Crab Icons">
-      <sprite>sprites\spr_crab_icon_beach</sprite>
-    </sprites>
+    <sprites name="Crab Icons"/>
     <sprite>sprites\gravestones</sprite>
     <sprite>sprites\sprite58</sprite>
   </sprites>
