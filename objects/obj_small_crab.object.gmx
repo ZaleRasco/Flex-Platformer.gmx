@@ -88,6 +88,7 @@ oldBehaviour = behaviour
             <string>///Death
 if (place_meeting(x, y, obj_player) &amp;&amp; (isDead = false) &amp;&amp; (obj_player.crabform=false)){
     isDead = true
+    sprite_index=spr_dead_crab
     global.crabDeaths += 1
     sprite_index = spr_dead_crab
 }
@@ -119,10 +120,13 @@ if (isDead = false){
     }    
     if (behaviourChange == 0){
         behaviour = "stayStill"
+        sprite_index=spr_crab_idle
     } else if ((behaviourChange &gt; 0) and (behaviourChange &lt;= 3)) {
         behaviour = "turnAround"
+        sprite_index=spr_crab_move
     }else if (behaviourChange &gt;= 4) {
         behaviour = "move"
+        sprite_index=spr_crab_move
     } else {
         //Waiting! DON'T MOVE!
     }
