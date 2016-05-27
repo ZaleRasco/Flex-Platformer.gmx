@@ -17,4 +17,5 @@ TimerHours=ini_read_real("Save","hours",0)
 
 
 ini_close(); 
+global.crabform=false
 room_goto(Saveroom)
