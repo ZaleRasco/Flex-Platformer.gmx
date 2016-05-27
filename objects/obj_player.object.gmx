@@ -131,26 +131,6 @@ hhspeed=hspeed
           </argument>
         </arguments>
       </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string></string>
-          </argument>
-        </arguments>
-      </action>
     </event>
     <event eventtype="3" enumb="1">
       <action>
@@ -605,54 +585,48 @@ if place_meeting(x, y, obj_death)
           <argument>
             <kind>1</kind>
             <string>///Sprites
-if (left = true)
-{
-    sprite_index = spr_playerleft
-}
-
-if (right = true)
-{
-    sprite_index = spr_playerright
-}
-
-if (leftrel)
-{
-    sprite_index = spr_playeridleleft
-}
-
-if (rightrel)
-{
-    sprite_index = spr_playeridleright
-}
-/*
-if (col1 &lt; 0) {col1 = 0};
-if (col1 &gt;256) {col1 = 256};
-if (col2 &lt; 0) {col2 = 0};
-if (col2 &gt;256) {col2 = 256};
-if (col3 &lt; 0) {col3 = 0};
-if (col3 &gt;256) {col3 = 256};
-if (col4 &lt; 0) {col4 = 0};
-if (col4 &gt;256) {col4 = 256};
-if (col5 &lt; 0) {col5 = 0};
-if (col5 &gt;256) {col5 = 256};
-if (col6 &lt; 0) {col6 = 0};
-if (col6 &gt;256) {col6 = 256};
-col1 += irandom_range(-13,13);
-col2 += irandom_range(-13,13);
-col3 += irandom_range(-13,13);
-col4 += irandom_range(-13,13);
-col5 += irandom_range(-13,13);
-col6 += irandom_range(-13,13);
-bab = instance_create(x+irandom_range(-5,5),y+irandom_range(-5,5),player_particles);
-with (bab) {
-col1 = obj_player.col1;
-col2 = obj_player.col2;
-col3 = obj_player.col3;
-col4 = obj_player.col4;
-col5 = obj_player.col5;
-col6 = obj_player.col6;
-color1 = make_colour_rgb(col1,col2,col3);
-color2 = make_colour_rgb(col4,col5,col6);
+if !(crabform){
+    if (left = true)
+    {
+        sprite_index = spr_playerleft
+    }
+    
+    if (right = true)
+    {
+        sprite_index = spr_playerright
+    }
+    
+    if (leftrel)
+    {
+        sprite_index = spr_playeridleleft
+    }
+    
+    if (rightrel)
+    {
+        sprite_index = spr_playeridleright
+    }
+}else{
+    if (left = true)
+    {
+        sprite_index = spr_small_crabs
+    }
+    
+    if (right = true)
+    {
+        sprite_index = spr_small_crabs
+    }
+    
+    if (leftrel)
+    {
+        sprite_index = spr_crab_idle
+    }
+    
+    if (rightrel)
+    {
+        sprite_index = spr_crab_idle
+    }
+    
+    scr_sparkle()
 }
 </string>
           </argument>
@@ -910,6 +884,40 @@ for(i=0;i&lt;instance_number(obj_attractor);i++)
             motion_add(point_direction(x,y,currentattractor.x,currentattractor.y),aforce/2)
             }
         }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Crab Form
+if(keyboard_check_pressed(ord('C')))
+{
+    if(obj_player.crabform=false)
+    {
+    obj_player.crabform=true
+    sprite_index = spr_crab_idle
+    }
+    else
+    {
+    obj_player.crabform=false
+    sprite_index = spr_playeridleright
+    }
 }
 </string>
           </argument>

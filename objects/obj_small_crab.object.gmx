@@ -274,7 +274,7 @@ if (speaking){
     draw_sprite(spr_dialogue_box,0,0,0);
     draw_set_color(c_white);
     draw_set_font(crab_text);
-    draw_text_ext(172,9,obj_crabcontrol.crabarray[crabnumber, 2],3,844);
+    draw_text_ext(172,9,obj_crabcontrol.crabarray[crabnumber, 2],32,844);
     draw_set_color(c_black);
     if (icontimer &lt; 30){
         draw_sprite(location_icon,0,5,5)

@@ -1,0 +1,29 @@
+if (col1 < 0) {col1 = 0};
+if (col1 >256) {col1 = 256};
+if (col2 < 0) {col2 = 0};
+if (col2 >256) {col2 = 256};
+if (col3 < 0) {col3 = 0};
+if (col3 >256) {col3 = 256};
+if (col4 < 0) {col4 = 0};
+if (col4 >256) {col4 = 256};
+if (col5 < 0) {col5 = 0};
+if (col5 >256) {col5 = 256};
+if (col6 < 0) {col6 = 0};
+if (col6 >256) {col6 = 256};
+col1 += irandom_range(-13,13);
+col2 += irandom_range(-13,13);
+col3 += irandom_range(-13,13);
+col4 += irandom_range(-13,13);
+col5 += irandom_range(-13,13);
+col6 += irandom_range(-13,13);
+bab = instance_create(x+irandom_range(-5,5),y+irandom_range(-5,5),player_particles);
+with (bab) {
+col1 = obj_player.col1;
+col2 = obj_player.col2;
+col3 = obj_player.col3;
+col4 = obj_player.col4;
+col5 = obj_player.col5;
+col6 = obj_player.col6;
+color1 = make_colour_rgb(col1,col2,col3);
+color2 = make_colour_rgb(col4,col5,col6);
+}

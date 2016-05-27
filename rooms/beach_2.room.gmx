@@ -116,6 +116,7 @@
     <instance objName="obj_roomend" x="1056" y="640" name="inst_940A0BBD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="352" y="608" name="inst_367089AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_control" x="0" y="0" name="inst_82607010" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_small_crab" x="672" y="608" name="inst_C3687B53" locked="0" code="crabnumber = 1;&#xA;location_icon = spr_crab_icon_beach;&#xA;obj_crabcontrol.crabarray[crabnumber,0] = &quot;Crab Johnson&quot;;&#xA;obj_crabcontrol.crabarray[crabnumber, 2] = &quot;Sick jump man. Radical&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tileset_beach" x="96" y="704" w="32" h="32" xo="0" yo="0" id="10000214" name="inst_1CB310C2" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
