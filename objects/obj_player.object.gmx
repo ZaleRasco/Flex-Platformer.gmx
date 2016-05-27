@@ -608,12 +608,12 @@ if !(crabform){
 }else{
     if (left = true)
     {
-        sprite_index = spr_small_crabs
+        sprite_index = spr_crab_moving
     }
     
     if (right = true)
     {
-        sprite_index = spr_small_crabs
+        sprite_index = spr_crab_moving
     }
     
     if (leftrel)
