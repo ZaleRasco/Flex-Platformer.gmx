@@ -72,10 +72,10 @@
       <sprite>sprites\spr_menuContinue</sprite>
       <sprite>sprites\spr_menuNewGame</sprite>
       <sprite>sprites\spr_menuExit</sprite>
-      <sprite>sprites\spr_menuOptions</sprite>
     </sprites>
     <sprites name="Crab Icons">
       <sprite>sprites\spr_crab_icon_beach</sprite>
+      <sprite>sprites\spr_crab_icon_default</sprite>
     </sprites>
     <sprite>sprites\gravestones</sprite>
     <sprite>sprites\sprite58</sprite>
@@ -170,6 +170,7 @@
   <rooms name="rooms">
     <room>rooms\room_menu</room>
     <room>rooms\beach_1</room>
+    <room>rooms\room_crab</room>
     <room>rooms\beach_2</room>
     <room>rooms\beach_3</room>
     <room>rooms\beach_4</room>
@@ -184,7 +185,6 @@
     <room>rooms\cave_5</room>
     <room>rooms\cave_6</room>
     <room>rooms\cave_7</room>
-    <room>rooms\room_crab</room>
     <room>rooms\room_win</room>
     <room>rooms\room_graveyard</room>
     <room>rooms\room_secret</room>

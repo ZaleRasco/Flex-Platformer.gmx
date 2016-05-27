@@ -39,6 +39,7 @@ ini_write_real("Save","tick",TimerTick)
 ini_write_real("Save","seconds",TimerSeconds)
 ini_write_real("Save","minutes",TimerMinutes)
 ini_write_real("Save","hours",TimerHours)
+ini_write_real("Save","crabform",global.crabform)
 ini_close(); 
 </string>
           </argument>
