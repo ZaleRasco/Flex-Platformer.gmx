@@ -148,11 +148,11 @@
     <objects name="Control">
       <object>objects\obj_menuMain</object>
       <object>objects\obj_control</object>
+      <object>objects\obj_crabcontrol</object>
       <object>objects\obj_roomstart</object>
       <object>objects\obj_roomsecretend</object>
       <object>objects\obj_roomend</object>
       <object>objects\obj_victory</object>
-      <object>objects\obj_crabcontrol</object>
       <object>objects\obj_rise</object>
     </objects>
     <objects name="Buttons">
