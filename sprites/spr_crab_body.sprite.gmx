@@ -17,8 +17,8 @@
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>384</width>
-  <height>96</height>
+  <width>400</width>
+  <height>100</height>
   <frames>
     <frame index="0">images\spr_crab_body_0.png</frame>
     <frame index="1">images\spr_crab_body_1.png</frame>
@@ -52,6 +52,5 @@
     <frame index="29">images\spr_crab_body_29.png</frame>
     <frame index="30">images\spr_crab_body_30.png</frame>
     <frame index="31">images\spr_crab_body_31.png</frame>
-    <frame index="32">images\spr_crab_body_32.png</frame>
   </frames>
 </sprite>
