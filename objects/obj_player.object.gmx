@@ -29,7 +29,7 @@
 g=0.5
 death=false
 global.force=false
-crabform=global.crabform
+obj_player.crabform=global.crabform
  if(obj_player.crabform)
     {
     sprite_index = spr_crab_idle
