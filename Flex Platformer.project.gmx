@@ -36,7 +36,7 @@
       <sprite>sprites\spr_setbullet</sprite>
       <sprite>sprites\spr_right_claw</sprite>
       <sprite>sprites\spr_left_claw</sprite>
-      <sprite>sprites\spr_crab_body</sprite>
+      <sprite>sprites\spr_bigcrab</sprite>
     </sprites>
     <sprites name="Terrain">
       <sprite>sprites\spr_bouncy</sprite>
@@ -77,8 +77,9 @@
     <sprites name="Crab Icons">
       <sprite>sprites\spr_crab_icon_beach</sprite>
     </sprites>
-    <sprite>sprites\gravestones</sprite>
-    <sprite>sprites\sprite58</sprite>
+    <sprite>sprites\spr_gravestones1</sprite>
+    <sprite>sprites\spr_gravestones2</sprite>
+    <sprite>sprites\spr_gravestones3</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background_spikes</background>
@@ -144,6 +145,7 @@
       <object>objects\obj_attractor</object>
       <object>objects\obj_repulsor</object>
       <object>objects\obj_small_crab</object>
+      <object>objects\obj_tombstone</object>
     </objects>
     <objects name="Control">
       <object>objects\obj_menuMain</object>
@@ -170,6 +172,7 @@
   <rooms name="rooms">
     <room>rooms\room_menu</room>
     <room>rooms\beach_1</room>
+    <room>rooms\room_graveyard</room>
     <room>rooms\beach_2</room>
     <room>rooms\beach_3</room>
     <room>rooms\beach_4</room>
@@ -186,7 +189,6 @@
     <room>rooms\cave_7</room>
     <room>rooms\room_crab</room>
     <room>rooms\room_win</room>
-    <room>rooms\room_graveyard</room>
     <room>rooms\room_secret</room>
   </rooms>
   <help>
