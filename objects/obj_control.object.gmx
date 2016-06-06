@@ -27,18 +27,24 @@
             <kind>1</kind>
             <string>if(room=room_graveyard)
 {
-    for(i=5; i&gt;0; i--)
+    for(i = 0; i &lt; 20; i++)
     {
     var tombstoneid;
-    tombstoneid = instance_create(96*i,628,obj_tombstone)
+    tombstoneid = instance_create(192+96*(i+1),628,obj_tombstone)
     with(tombstoneid)
         {
+        visible=false
+        tombid=obj_control.i
         switch(irandom_range(1,3))
             {
             case 1: sprite_index=spr_gravestones1 break;
             case 2: sprite_index=spr_gravestones2 break;
             case 3: sprite_index=spr_gravestones3 break;
             }
+        if (global.crabarray[tombid,1]=true)
+        {
+            visible=true
+        }
         }
     }
 }
@@ -299,7 +305,7 @@ draw_text(100,75,obj_player.crabform)
             <kind>1</kind>
             <string>///Testing
 //Array of things to draw
-testdraw[0] = obj_crabcontrol.crabarray[0,0]
+testdraw[0] = global.crabarray[0,0]
 testdraw[1] = obj_player.crabform
 testdraw[2] = fps
 testdraw[3] = obj_player.death

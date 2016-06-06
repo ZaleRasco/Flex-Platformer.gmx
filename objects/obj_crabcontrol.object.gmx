@@ -25,17 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Crab Array
-var crabarraycounter;
-crabarraycounter = 0
-
-for (i = 0; i &lt; 20; i++){
-    crabarray[crabarraycounter,0] = "name_null"
-    crabarray[crabarraycounter, 1] = false
-    crabarray[crabarraycounter, 2] = "dialogue_null"
-    crabarraycounter++
-}
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>
