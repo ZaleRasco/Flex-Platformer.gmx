@@ -108,7 +108,6 @@
     <path>paths\path0</path>
     <path>paths\path1</path>
     <path>paths\path2</path>
-    <path>paths\path3</path>
   </paths>
   <scripts name="scripts">
     <scripts name="Menu">
