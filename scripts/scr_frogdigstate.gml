@@ -1,4 +1,5 @@
 self.sprite_index = frog_dig;
-i = 0;
-vspeed +=1;
-if y >= room_height + sprite_height {path_start(path3, vspeed * -1,state = scr_frogidlestate,true) self.sprite_index = frog_jump}
+var L = 0
+if (I == 0) {path_start(path3, 1,path_action_stop, false) I = 1};
+self.alarm[0] = room_speed * 8.94;
+

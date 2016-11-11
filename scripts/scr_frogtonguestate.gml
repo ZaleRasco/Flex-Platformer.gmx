@@ -1,2 +1,2 @@
-self.sprite_index = spr_frog_tongue_attack;
-if (image_index > 20) state = scr_frogidlestate;
+self.sprite_index = frog_tongue;
+if (image_index > 19) {state = scr_frogidlestate; }
