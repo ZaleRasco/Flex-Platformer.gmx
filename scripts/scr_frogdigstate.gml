@@ -1,7 +1,4 @@
-i = 1;
-if i = 1 {
-self.sprite_index = spr_frog_dig;
+self.sprite_index = frog_dig;
 i = 0;
-}
 vspeed +=1;
-if vspeed > 11 {state = scr_frogdirtstate && vspeed = 0}
+if y >= room_height + sprite_height {path_start(path3, vspeed * -1,state = scr_frogidlestate,true) self.sprite_index = frog_jump}

@@ -67,7 +67,14 @@
     <sprite>sprites\spr_crumble</sprite>
     <sprite>sprites\spr_sponage</sprite>
     <sprite>sprites\spr_sponage_woosh</sprite>
-    <sprite>sprites\spr_frog</sprite>
+    <sprites name="frog">
+      <sprite>sprites\spr_frog</sprite>
+      <sprite>sprites\frog_idle</sprite>
+      <sprite>sprites\frog_dig</sprite>
+      <sprite>sprites\frog_pounce</sprite>
+      <sprite>sprites\frog_tongue</sprite>
+      <sprite>sprites\frog_jump</sprite>
+    </sprites>
     <sprites name="Menu">
       <sprite>sprites\spr_menuContinue</sprite>
       <sprite>sprites\spr_menuNewGame</sprite>
@@ -101,6 +108,7 @@
     <path>paths\path0</path>
     <path>paths\path1</path>
     <path>paths\path2</path>
+    <path>paths\path3</path>
   </paths>
   <scripts name="scripts">
     <scripts name="Menu">
@@ -115,7 +123,6 @@
       <script>scripts\scr_frogtonguestate.gml</script>
       <script>scripts\scr_frogpouncestate.gml</script>
       <script>scripts\scr_frogdigstate.gml</script>
-      <script>scripts\scr_frogdirtstate.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -133,7 +140,7 @@
       <object>objects\obj_cutter</object>
       <object>objects\obj_crusher</object>
       <object>objects\obj_crabhead</object>
-      <object>objects\FROG_BOSS</object>
+      <object>objects\Frog_boss</object>
     </objects>
     <objects name="Terrain">
       <object>objects\obj_bouncy</object>
@@ -172,6 +179,7 @@
   <rooms name="rooms">
     <room>rooms\room_menu</room>
     <room>rooms\beach_1</room>
+    <room>rooms\room_frog</room>
     <room>rooms\beach_2</room>
     <room>rooms\beach_3</room>
     <room>rooms\beach_4</room>
