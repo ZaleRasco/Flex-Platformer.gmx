@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>state = scr_frogidlestate;
+            <string>g=0.5
+state = scr_frogidlestate;
 </string>
           </argument>
         </arguments>
@@ -49,6 +50,50 @@
           <argument>
             <kind>1</kind>
             <string>script_execute(state);
+if (place_free(x, y + 1))
+{
+    vspeed += g
+}
+
+if (!place_free(x, y + vspeed) &amp;&amp; vspeed &lt; 0)
+{
+    vspeed = 0
+    move_contact_solid(90, vspeed)
+}
+
+if (!place_free(x, y + vspeed) &amp;&amp; vspeed &gt; 0)
+{
+    vspeed = 0
+    move_contact_solid(270, vspeed)
+}
+
+if (!place_free(x + hspeed, y) &amp;&amp; hspeed &gt; 0)
+{
+    hspeed = 0
+    move_contact_solid(0, hspeed)
+}
+
+if (!place_free(x + hspeed, y) &amp;&amp; hspeed &lt; 0)
+{
+    hspeed = 0
+    move_contact_solid(180, hspeed)
+}
+
+
+
+if (!place_free(x + hspeed, y + vspeed))
+{
+    dir = point_direction(x, y, x + hspeed, y + vspeed)
+    move_contact_solid(dir, speed)
+    if (abs(hspeed) &gt; abs(vspeed))
+    {
+        vspeed = 0
+    }
+    else
+    {
+        hspeed = 0
+    }
+}
 </string>
           </argument>
         </arguments>

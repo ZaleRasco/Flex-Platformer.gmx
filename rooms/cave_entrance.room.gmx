@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1024</width>
   <height>768</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>16</vsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -124,6 +124,8 @@
     <instance objName="obj_wall" x="1024" y="608" name="inst_3A1EAA64" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1024" y="704" name="inst_2174579B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_control" x="0" y="0" name="inst_3C4DB845" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="object38" x="176" y="624" name="inst_4CFDA70C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="object38" x="400" y="624" name="inst_6EC4C7E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="" x="96" y="384" w="16" h="16" xo="0" yo="0" id="10000001" name="inst_0C8EC46C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
