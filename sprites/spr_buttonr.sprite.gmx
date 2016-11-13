@@ -7,10 +7,10 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>3</bbox_left>
-  <bbox_right>28</bbox_right>
-  <bbox_top>20</bbox_top>
-  <bbox_bottom>31</bbox_bottom>
+  <bbox_left>10</bbox_left>
+  <bbox_right>21</bbox_right>
+  <bbox_top>1</bbox_top>
+  <bbox_bottom>30</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -21,5 +21,36 @@
   <height>32</height>
   <frames>
     <frame index="0">images\spr_buttonr_0.png</frame>
+    <frame index="1">images\spr_buttonr_1.png</frame>
+    <frame index="2">images\spr_buttonr_2.png</frame>
+    <frame index="3">images\spr_buttonr_3.png</frame>
+    <frame index="4">images\spr_buttonr_4.png</frame>
+    <frame index="5">images\spr_buttonr_5.png</frame>
+    <frame index="6">images\spr_buttonr_6.png</frame>
+    <frame index="7">images\spr_buttonr_7.png</frame>
+    <frame index="8">images\spr_buttonr_8.png</frame>
+    <frame index="9">images\spr_buttonr_9.png</frame>
+    <frame index="10">images\spr_buttonr_10.png</frame>
+    <frame index="11">images\spr_buttonr_11.png</frame>
+    <frame index="12">images\spr_buttonr_12.png</frame>
+    <frame index="13">images\spr_buttonr_13.png</frame>
+    <frame index="14">images\spr_buttonr_14.png</frame>
+    <frame index="15">images\spr_buttonr_15.png</frame>
+    <frame index="16">images\spr_buttonr_16.png</frame>
+    <frame index="17">images\spr_buttonr_17.png</frame>
+    <frame index="18">images\spr_buttonr_18.png</frame>
+    <frame index="19">images\spr_buttonr_19.png</frame>
+    <frame index="20">images\spr_buttonr_20.png</frame>
+    <frame index="21">images\spr_buttonr_21.png</frame>
+    <frame index="22">images\spr_buttonr_22.png</frame>
+    <frame index="23">images\spr_buttonr_23.png</frame>
+    <frame index="24">images\spr_buttonr_24.png</frame>
+    <frame index="25">images\spr_buttonr_25.png</frame>
+    <frame index="26">images\spr_buttonr_26.png</frame>
+    <frame index="27">images\spr_buttonr_27.png</frame>
+    <frame index="28">images\spr_buttonr_28.png</frame>
+    <frame index="29">images\spr_buttonr_29.png</frame>
+    <frame index="30">images\spr_buttonr_30.png</frame>
+    <frame index="31">images\spr_buttonr_31.png</frame>
   </frames>
 </sprite>

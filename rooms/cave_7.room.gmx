@@ -152,7 +152,7 @@
     <instance objName="obj_bouncy" x="512" y="224" name="inst_F59056C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bouncy" x="448" y="416" name="inst_872128C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bouncy" x="512" y="608" name="inst_E5CC680D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object40" x="32" y="128" name="inst_6986D02C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="rock" x="32" y="128" name="inst_6986D02C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_neatth" x="0" y="704" w="32" h="32" xo="34" yo="0" id="10005787" name="inst_3B855091" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

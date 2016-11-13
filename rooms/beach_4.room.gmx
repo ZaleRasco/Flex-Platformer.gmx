@@ -197,10 +197,10 @@
     <instance objName="obj_death" x="352" y="656" name="inst_DBBC95BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_death" x="368" y="656" name="inst_BCF9EED9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_control" x="0" y="0" name="inst_3F8F043D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object38" x="912" y="624" name="inst_D248DC4E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object38" x="928" y="624" name="inst_845CED3B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object38" x="944" y="624" name="inst_CD351B21" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object38" x="880" y="624" name="inst_03BBE0A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="rocks" x="912" y="624" name="inst_D248DC4E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="rocks" x="928" y="624" name="inst_845CED3B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="rocks" x="944" y="624" name="inst_CD351B21" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="rocks" x="880" y="624" name="inst_03BBE0A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_neatth" x="320" y="384" w="32" h="32" xo="34" yo="0" id="10002624" name="inst_CB52DB9F" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -154,9 +154,9 @@
     <instance objName="obj_wall" x="544" y="736" name="inst_F163120C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="800" y="576" name="inst_1B54BE64" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="544" y="576" name="inst_D5F3BF58" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object38" x="160" y="624" name="inst_AFA72262" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object38" x="176" y="624" name="inst_7196E078" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object38" x="944" y="594" name="inst_E18272F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="rocks" x="160" y="624" name="inst_AFA72262" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="rocks" x="176" y="624" name="inst_7196E078" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="rocks" x="944" y="594" name="inst_E18272F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background_spikes" x="400" y="512" w="16" h="16" xo="18" yo="18" id="10003226" name="inst_CD791094" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
