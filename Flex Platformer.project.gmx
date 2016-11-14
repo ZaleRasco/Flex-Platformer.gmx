@@ -4,7 +4,12 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sou_jump</sound>
+    <sound>sound\key</sound>
+    <sound>sound\bounce</sound>
+    <sound>sound\bubble</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Buttons">
       <sprite>sprites\spr_buttonb</sprite>

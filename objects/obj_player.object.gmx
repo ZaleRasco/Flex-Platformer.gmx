@@ -72,6 +72,7 @@ exitjump=false
 
 trampoline=false
 bubbleid=noone
+audio_channel_num(1);
 
 col1 = irandom_range(0,256);
 col2 = irandom_range(0,256);
@@ -498,6 +499,7 @@ if (jump = true || exitjump = true)
     jumping = true
     vspeed = -jumpheight
     instance_create(x,y,object39);
+    audio_play_sound(sou_jump, 1, false);
     exitjump = false
 }
 else if ((jump) &amp;&amp; (place_free(x, y + 1)))
@@ -513,6 +515,7 @@ if (jumpbuffer &gt; 0)
         jumping = true
         vspeed = -jumpheight
         instance_create(x,y,object39);
+        audio_play_sound(sou_jump, 1, false);
         if (moving = false)
         {
             hspeed = 0
@@ -709,6 +712,7 @@ if (instance_number(obj_bubble) &gt; 0)
         {
             x = bubbleid.x
             y = bubbleid.y
+            audio_play_sound(bubble, 1, false);
             if (obj_player.vspeed &gt; 0)
             {
                 bubbleid.vspeed = min(obj_player.vspeed, 4)
@@ -750,6 +754,7 @@ if (instance_number(obj_bubble) &gt; 0)
             exiting = true
             stuck = false
             exitjump = true
+            audio_play_sound(bubble, 1, false);
         }
         if (hspeed &gt; 3 &amp;&amp; obj_player.moving = false)
         {
@@ -817,21 +822,25 @@ if (stuck = false)
         {
             jumping = false
             vspeed = -14
+            audio_play_sound(bounce, 1, false);
         }
         if (place_meeting(x, y - 1, obj_bouncy))
         {
             jumping = false
             vspeed = 14
+            audio_play_sound(bounce, 1, false);
         }
         if (place_meeting(x + 1, y, obj_bouncy))
         {
             jumping = false
             hspeed = -14
+            audio_play_sound(bounce, 1, false);
         }
         if (place_meeting(x - 1, y, obj_bouncy))
         {
             jumping = false
             hspeed = 14
+            audio_play_sound(bounce, 1, false);
         }
     }
 
@@ -842,21 +851,25 @@ if (stuck = false)
         {
             jumping = false
             vspeed = -vvspeed * 1.1
+            audio_play_sound(bounce, 1, false);
         }
         if (place_meeting(x, y - 1, obj_bouncy))
         {
             jumping = false
             vspeed = -vvspeed * 1.1
+            audio_play_sound(bounce, 1, false);
         }
         if (place_meeting(x + 1, y, obj_bouncy))
         {
             jumping = false
             hspeed = -hhspeed * 1.1
+            audio_play_sound(bounce, 1, false);
         }
         if (place_meeting(x - 1, y, obj_bouncy))
         {
             jumping = false
             hspeed = + -hhspeed * 1.1
+            audio_play_sound(bounce, 1, false);
         }
     }
 }
