@@ -36,14 +36,7 @@ col5 = 0;
 col6 = 0;
 color1 = make_colour_rgb(col1,col2,col3);
 color2 = make_colour_rgb(col4,col5,col6);
-array[0] = draw_circle_colour(x,y,size,color1,color2,false);
-array[1] = draw_ellipse_colour(x-(size/2),y-(size/2),x+(size*2),y+(size*2),color1,color2,false);
-array[2] = draw_line_colour(x-(size/2),y-(size/2),x+(size*2),y+(size*2),color1,color2);
-array[3] = draw_point_colour(x+(irandom_range(-1,1)*(size/2)),y+(irandom_range(-1,1)*(size/2)),color1);
-array[4] = draw_triangle_colour(x-(size/2),y-(size/2),x+(size*2),y+(size*2),x+irandom_range(-size,size),y+irandom_range(-10,10),color1,color2,color1,false);
-array[5] = draw_point_colour(x+(irandom_range(-1,1)*(size/2)),y+(irandom_range(-1,1)*(size/2)),color2);
-array[6] = draw_roundrect_colour(x-(size/2),y-(size/2),x+(size*2),y+(size*2),color1,color2,false);
-array[7] = draw_rectangle_colour(x-(size/2),y-(size/2),x+(size*2),y+(size*2),color1,color2,color2,color1,false);
+part = irandom_range(1,9);
 
 </string>
           </argument>
@@ -67,9 +60,10 @@ array[7] = draw_rectangle_colour(x-(size/2),y-(size/2),x+(size*2),y+(size*2),col
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>size += irandom_range(0,2);
+            <string>size += random_range(0,1);
 if size &gt;= 10 {instance_destroy()}
-
+color1 = make_colour_rgb(col1,col2,col3);
+color2 = make_colour_rgb(col4,col5,col6);
 </string>
           </argument>
         </arguments>
@@ -92,9 +86,15 @@ if size &gt;= 10 {instance_destroy()}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_alpha(0.5);
-//array[irandom_range(0,7)];
-draw_set_alpha(1);
+            <string>if (part = 1) draw_circle_colour(x,y,size,color1,color2,false);
+if (part = 2) draw_ellipse_colour(x-(size/2),y-(size/2),x+(size*2),y+(size*2),color1,color2,false);
+if (part = 3) draw_line_colour(x-(size/2),y-(size/2),x+(size*2),y+(size*2),color1,color2);
+if (part = 4) draw_point_colour(x+(irandom_range(-1,1)*(size/2)),y+(irandom_range(-1,1)*(size/2)),color1);
+if (part = 5) draw_triangle_colour(x-(size/2),y-(size/2),x+(size*2),y+(size*2),x+irandom_range(-size,size),y+irandom_range(-10,10),color1,color2,color1,false);
+if (part = 6) draw_point_colour(x+(irandom_range(-1,1)*(size/2)),y+(irandom_range(-1,1)*(size/2)),color2);
+if (part = 7) draw_roundrect_colour(x-(size/2),y-(size/2),x+(size*2),y+(size*2),color1,color2,false);
+if (part = 8) draw_rectangle_colour(x-(size/2),y-(size/2),x+(size*2),y+(size*2),color1,color2,color2,color1,false);
+if (part = 9) draw_line_width_colour(x-size/2,y-size/2, x+size/2,y+size/2, size, color1,color2);
 </string>
           </argument>
         </arguments>
