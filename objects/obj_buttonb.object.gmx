@@ -51,7 +51,7 @@
 {
     for(i=instance_number(obj_buttonwallb); i&gt;=0; i--)
     {
-    audio_play_sound(key, 1, false);
+    audio_play_sound(key, 2, false);
         with (instance_find(obj_buttonwallb,i))
         {
         instance_destroy()
